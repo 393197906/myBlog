@@ -1,0 +1,11 @@
+<ul class="sidebar2 left-sidebar dark" style="border:0;">
+    <li class="title">{$nodeName}</li>
+    <volist id="vo" name="list">
+    <li class="list" id="{$vo.ename}">
+        <a href="__CONTROLLER__/lists?id={$vo.id}" target="frame">
+        <span class="mif-list icon"></span>
+        {$vo.cname}
+        </a>
+    </li>
+    </volist>
+</ul>

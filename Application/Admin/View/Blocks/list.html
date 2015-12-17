@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<include file="Blocks/import"/>
+	<title>{$subject.ename}</title>
+</head>
+<body>
+	<div class="flex-grid">
+		<div class="row">
+			<div class="cell size12">
+				<h3>
+					{$subject.cname} <small>{$subject.ename}</small>
+					<span class="mif-list place-right"></span>
+				</h3>
+				<hr class="bg-grayLighter thin"></div>
+		</div>
+		<a href="__MODULE__/Code/addArticle?id={$Think.get.id}">
+			<button class="button danger full-size">
+				<span class="mif-plus"></span>
+				添加文章
+			</button>
+		</a>
+
+		<div class="row">
+			<div class="cell size12">
+				<table class="table sortable-markers-on-left align-center border bordered hovered">
+					<thead>
+						<tr>
+							<th class="sortable-column sort-desc" style="width:5%;">ID</th>
+							<th class="sortable-column" style="width:27%;">标题</th>
+							<th class="sortable-column" style="width:14%;">作者</th>
+							<th class="sortable-column" style="width:14%;">阅读量</th>
+							<th class="sortable-column" style="width:15%;">发表时间</th>
+							<th class="sortable-column" style="width:25%;">操作</th>
+
+						</tr>
+					</thead>
+					<tbody>
+
+						<volist id="vo" name="dataList">
+							<tr>
+								<td>{$vo.id}</td>
+								<td>{$vo.title}</td>
+								<td>{$vo.author}</td>
+								<td>{$vo.view}</td>
+								<td>{$vo.posttime|date="Y-m-d",###}</td>
+								<td>
+									<php>if($vo['recommend'] =='1'){</php>
+									<button class="button info recommend" id='{$vo.id}'>已荐</button>
+									<php>}else{</php>
+									<button class="button warning recommend" id='{$vo.id}'>推荐</button>
+									<php>}</php>
+									<a href="__ROOT__/index.php/Home/Service/article?id={$vo.id}" target="_blank">
+										<button class="button primary btn">查看</button>
+									</a>
+									<div class="dropdown-button">
+										<button class="button danger dropdown-toggle">更多</button>
+										<ul class="split-content d-menu place-right" data-role="dropdown">
+											<li>
+												<a href="__MODULE__/Content/editArticle?id={$vo.id}">编辑</a>
+											</li>
+											<li class="delete">
+												<a href="">删除</a>
+											</li>
+										</ul>
+									</div>
+
+								</td>
+							</tr>
+						</volist>
+
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell size12">{$page}</div>
+		</div>
+	</div>
+
+	<include file="Blocks/alert-info" />
+	<include file="Blocks/header"/>
+	<div class="container-fluid" style="padding:0">
+		<div class="col-md-2 sidebar" style="padding: 0;max-width:240px">
+
+			<include file="leftnavarticle"/>
+		</div>
+		<div class="col-md-10 col-md-offset-2" style="margin-top:50px;">
+			<div class="col-md-12" style="height:20px;"></div>
+			<php>if($_GET['cfrag']=='detial'){</php>
+			<include file="cfragarticledetial"/>
+			<php>}elseif($_GET['cfrag']=='edit'){</php>
+			<include file="cfragarticleedit"/>
+			<php>}else{</php>
+			<include file="fragarticlelist"/>
+			<php>}</php>
+		</div>
+	</div>
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		  var title = $('title').text();
+		  console.log(title);
+		  $('#'+title, window.parent.document).addClass('active').siblings().removeClass('active');
+ 	
+         //recommend
+		$('.recommend').click(function(){
+			var id = $(this).attr('id');
+			$.post('__MODULE__/Content/doRecommendArticle', {id:id}, function(data) {
+				$("#info").text(data['info'][0]);
+				var dialog = $("#dialog").data('dialog');
+				dialog.open();
+				if(data['status']==1){
+					if(data['info'][1]=='1'){
+						$("#"+id).removeClass('warning').addClass('info').text("已荐");
+					}else{
+						$("#"+id).removeClass('info').addClass('warning').text("推荐");
+					}
+				}
+			});
+		})
+
+		//delete
+		$(".delete").click(function(event) {
+			event.preventDefault();
+			var id = $(this).parent().parent().siblings().eq(0).attr('id');
+			$.post('__MODULE__/Content/doDelArticle', {id:id}, function(data) {
+				getDialog(data['info']);
+                        if(data['status']==1){
+	                        setTimeout(function(){
+                            	history.go(0)
+                            }, 1000);
+	                    }
+				});
+		});
+		
+	});
+	
+</script>

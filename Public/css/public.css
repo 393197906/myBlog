@@ -1,0 +1,12 @@
+﻿html,body{
+		height:100%;
+		font-family:"微软雅黑";
+	}
+	body{
+		padding-left:1%;
+		padding-top: 2%;
+		padding-right: 1%; 
+	}
+#editor{
+		width:99.5%;
+	}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误提示</title>
+    <include file="Blocks/import"/>
+</head>
+<body>
+    <div class="flex-grid">
+        <div class="row flex-just-center">
+        <div class="cell size3 align-center" style="margin-top:200px;">
+             <div class="padding text-secondary">
+                <ul style="list-style-type: none;">
+                    <li><span class="mif-warning mif-ani-flash mif-ani-fast mif-4x margin5"></span></li>
+                    <li><h2>{$error}</h2></li>
+                    <li> 页面将在
+                <span id="wait">{$waitSecond}</span>
+                秒后跳转，或
+                <br>
+                <a href="{$jumpUrl}" id="href">点此直接跳转</a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var wait = document.getElementById('wait'),
+            href = document.getElementById('href').href;
+
+    var interval = setInterval(function () {
+        var time = --wait.innerHTML;
+        if (time <= 0) {
+            location.href = href;
+            clearInterval(interval);
+        }
+        ;
+    }, 1000);
+
+</script>

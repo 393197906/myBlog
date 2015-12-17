@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<include file="Blocks/import"/>
+	<title>{$title}</title>
+	<style>
+	td input{
+		width:100%;
+		height:100%;
+		/*border:1px solid red;*/
+	}
+	</style>
+</head>
+<body>
+	<div class="flex-grid">
+		<div class="row">
+			<div class="cell size12">
+				<h3>
+					专题管理 <small>SubjectControl</small>
+					<span class="mif-apps place-right"></span>
+				</h3>
+				<hr class="bg-grayLighter thin">
+				</div>
+		</div>
+
+		<div class="row">
+			<div class="cell size12">
+				<table class="table sortable-markers-on-left align-center border bordered hovered" id="table">
+					<thead>
+						<tr>
+							<th class="sortable-column sort-desc" style="width:5%;">ID</th>
+							<th class="sortable-column" style="width:27%;">中文名</th>
+							<th class="sortable-column" style="width:27%;">英文名</th>
+							<th class="sortable-column" style="width:12%;">父节点</th>
+							<th class="sortable-column" style="width:29%;">操作</th>
+
+						</tr>
+					</thead>
+					<tbody>
+                        <php>
+                            $_GET['color'] = array('fff','#eee','#ddd','#','#ccc','#ccc','#ccc');
+                            function DG_printList($arr,$colorId=0){
+                                $count = count($arr);
+                                for($i =0;$i!=$count;$i++){
+                                    echo "<tr style=\"background-color:".$_GET['color'][$colorId]."\">";
+                                    echo "<td>".$arr[$i]['id']."</td>";
+                                    echo "<td>".$arr[$i]['cname']."</td>";
+                                    echo "<td>".$arr[$i]['ename']."</td>";
+                                    if(!($arr[$i]['pid'])){
+                                        echo "<td>最高节点</td>";
+                                    }else{
+                                        echo "<td>".$arr[$i]['pi']." ".($colorId+1)."级节点</td>";
+                                    }
+                                    echo "<td>
+                                    <button class=\"button info rename\" >编辑</button>
+                                    <button class=\"button primary addChild\" >添加子节点</button>
+                                    <button class=\"button danger delete\" >删除</button>
+                                     </td>"; 
+                                    echo "</tr>";
+
+                                    if(is_array($arr[$i]['zi'])){
+                                        $newColorId = $colorId+1;  //新颜色
+                                        DG_printList($arr[$i]['zi'],$newColorId);
+                                    }
+                                }
+                                
+                            }
+
+                            DG_printList($subjectList);
+                        </php>
+					</tbody>
+				</table>
+
+				<button class="button danger full-size" id="add"><span class="mif-plus"></span> 新增</button>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="cell size12">{$page}</div>
+		</div>
+	</div>
+
+	<include file="Blocks/alert-info" />
+</body>
+</html>
+<script>
+	$(document).ready(function() {
+		 /* var title = $('title').text();
+		  console.log(title);
+		  $('#'+title, window.parent.document).addClass('active').siblings().removeClass('active');   */
+ 		
+		 //add
+        $("#add").click(function(){
+            $(this).hide();
+            var obj = $("#table tbody").children();
+            var val=obj.eq(obj.length-1).find('td').eq(0).text();
+            if(!val){
+                val = 0
+            }
+            $('#table').append("<tr><td>"+(parseInt(val)+1)+"</td><td><input type='text' name='cname' placeholder='专题中文名'></td><td><input type='text' name='enam' placeholder='专题英文名'></td><td></td><td><button class='button primary' id='addsave'>保存</button> <button class='button warning ' id='addcancel'>取消</button></td></tr>");
+        })
+
+         $("#table").delegate("#addsave",'click',function(){
+            var valEname = $(this).parent().prev().prev().find('input').val() ;
+            var valCname = $(this).parent().prev().prev().prev().find('input').val() ;
+            $.post("__MODULE__/Subject/doAddSubject",
+                    {
+                        cname:valCname,
+                        ename:valEname,
+                    },
+                    function(data){
+                    	getDialog(data['info']);
+                        if(data['status']==1){
+                            setTimeout(function(){
+                            	history.go(0)
+                            }, 1000);
+                        }
+                    });
+
+        })
+        $("#table").delegate("#addcancel",'click',function(){
+            history.go(0);
+        })  
+
+        //addChild
+        $('.addChild').one('click',function(){
+            var tr = $(this).parent().parent();
+            tr.after("<tr><td></td><td><input type='text' name='cname' placeholder='填写中文名称'></td><td><input type='text' name='ename' placeholder='填写英文名称，首字母大写'></td><td></td><td><button class='button warning savechild'>保存</button> <button class='button danger cancelchild'>取消</button></td></tr>")
+        })
+
+        $("#table").delegate(".savechild",'click',function(){
+            var pid = $(this).parent().parent().prev().children().eq(0).text();
+            var cname = $(this).parent().siblings().eq(1).children().val() ;
+            var ename = $(this).parent().siblings().eq(2).children().val();
+            $.post("__MODULE__/Subject/doAddSubject",
+                    {
+                        cname:cname,
+                        ename:ename,
+                        pid:pid
+                    },
+                    function(data){
+                        getDialog(data['info']);
+                        if(data['status']==1){
+                            setTimeout(function(){
+                                history.go(0)
+                            }, 1000);
+                        }
+                    });
+
+
+        })  
+
+         $("#table").delegate(".cancelchild",'click',function(){
+            history.go(0);
+        })  
+
+         //edit
+        $(".rename").click(function(){
+            var valname = $(this).parent().prev().prev().prev().text();  //专题名
+            $(this).parent().prev().prev().prev().html("<input type='text' name='rename'  id='rename' value='"+valname+"'>");
+            var valtheme = $(this).parent().prev().prev().text();  //模板名
+            $(this).parent().prev().prev().html("<input type='text' name='theme'  id='theme' value='"+valtheme+"'>");
+            var valclass = $(this).parent().prev().text();//分类名
+            $(this).parent().prev().html("<input type='text' name='classname' id='classname'  value='"+valclass+"'>");
+            var newHtml = "<button class=\"button primary \" id='renamesave'>保存</button> <button class=\"button warning \" id='renamecancel'>取消</button>"
+            $(this).parent().html(newHtml); 
+
+        })
+
+        $("#table").delegate("#renamesave",'click',function(){
+            var id = $(this).parent().parent().find('td').eq(0).text();
+            var valname = $("#rename").val();
+            var valtheme = $("#theme").val();
+            var valclass = $("#classname").val();
+            $.post("__MODULE__/Content/editSubject",
+                    {    id:id,
+                        name:valname,
+                        theme:valtheme,
+                        class:valclass
+                    },
+                    function(data){
+                    	getDialog(data['info']);
+                        if(data['status']==1){
+                            setTimeout(function(){
+                            	history.go(0)
+                            }, 1000);
+                        }
+                    });
+
+        })
+
+        $("#table").delegate("#renamecancel",'click',function(){
+            history.go(0)
+        })
+
+        //delete
+        $(".delete").click(function(){
+            var id = $(this).parent().parent().find('td').eq(0).text();
+            $.post("__MODULE__/Subject/doDeleteSubject",
+                    {
+                        id:id
+                    },
+                    function(data){
+                    	getDialog(data['info']);
+                        if(data['status']==1){
+	                        setTimeout(function(){
+                            	history.go(0)
+                            }, 1000);
+	                    }
+                    });
+        }) 
+
+        
+		
+	}); 
+	
+</script>

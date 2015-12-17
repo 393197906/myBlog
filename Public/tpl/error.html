@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>错误提示</title>
+    <include file="Blocks/import"/>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="header">
+        <include file="Blocks/header"/>
+
+    </div>
+    <div class="content text-center">
+
+        <div class="errorinfo" style="padding:20px;min-height: 300px">
+            <h1>
+                <span class="glyphicon glyphicon-exclamation-sign"></span>
+            </h1>
+            <h4>
+                {$error}
+            </h4>
+            <br>
+
+            <p>
+                页面将在
+                <span id="wait" class="text-primary">{$waitSecond}</span>
+                秒后跳转，或
+                <br>
+                <a href="{$jumpUrl}" id="href">点此直接跳转</a>
+
+            </p>
+        </div>
+
+    </div>
+    <div class="footer">
+        <include file="Blocks/footer"/>
+
+    </div>
+
+</div>
+</body>
+</html>
+<script>
+    var wait = document.getElementById('wait'),
+            href = document.getElementById('href').href;
+
+    var interval = setInterval(function () {
+        var time = --wait.innerHTML;
+        if (time <= 0) {
+            location.href = href;
+            clearInterval(interval);
+        }
+        ;
+    }, 1000);
+
+</script>

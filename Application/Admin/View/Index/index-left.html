@@ -1,0 +1,33 @@
+<ul class="sidebar2 left-sidebar dark" style="border:0;">
+	<li class="title">内容管理</li>
+	<li id="subjectList">
+		<a class="dropdown-toggle">
+			<span class="mif-tree icon"></span>
+			专题列表
+		</a>
+		<ul class="d-menu" data-role="dropdown" style="display: none;">
+			<volist id="vo" name="subject">
+				<li>
+				<a href="__MODULE__/Content/subjectList?id={$vo.id}" target="frame">
+					{$vo.name}
+				</a>
+			</li>
+			</volist>
+			
+			
+		</ul>
+	</li>
+	<li class="list" id="subjectControl">
+		<a href="__MODULE__/Content/SubjectControl" target="frame">
+			<span class="mif-apps icon"></span>
+			专题管理
+		</a>
+	</li>
+	<li class="title">园区管理</li>
+	<li class="list" id="incubatorList">
+		<a href="__MODULE__/Content/incubatorList" target="frame">
+			<span class="mif-home icon"></span>
+			园区列表
+		</a>
+	</li>
+</ul>

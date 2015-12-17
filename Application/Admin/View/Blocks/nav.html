@@ -1,0 +1,73 @@
+<div class="app-bar fixed-top darcula" data-role="appbar">
+	<a class="app-bar-element branding" href="__MODULE__/Index/index" style="font-family:'华文新魏';line-height: 3.35rem">
+	DaWenXi</a>
+	<span class="app-bar-divider"></span>
+	<ul class="app-bar-menu">
+		<li data-flexorderorigin="0" data-flexorder="1">
+			<a href="__MODULE__/Code/index?id=1">
+				<span class="mif-user icon"></span>
+				编码
+			</a>
+		</li>
+		<li data-flexorderorigin="2" data-flexorder="2">
+			<a href="__MODULE__/Code/index?id=2">
+				<span class="mif-lamp icon"></span>
+				娱乐
+			</a>
+		</li>
+		<li data-flexorderorigin="1" data-flexorder="3" class="active-container">
+			<a href="" class="dropdown-toggle">
+				<span class="mif-file-text icon"></span>
+				暴雪
+			</a>
+			<ul class="d-menu" data-role="dropdown" style="display: none;">
+				<li>
+					<a href="__MODULE__/Code/index?id=3">
+						<span class="mif-bubble icon"></span>
+						魔兽世界
+					</a>
+				</li>
+				<li>
+					<a href="__MODULE__/Code/index?id=4">
+						<span class="mif-list icon"></span>
+						暗黑3
+					</a>
+				</li>
+			</ul>
+		</li>
+		
+		<li data-flexorderorigin="4" data-flexorder="5">
+			<a href="" class="dropdown-toggle">
+				<span class="mif-cog icon"></span>
+				设置
+			</a>
+			<ul class="d-menu" data-role="dropdown">
+
+				<li class="divider"></li>
+				<li>
+					<a href="__MODULE__/Subject/index">专题管理</a>
+				</li>
+			</ul>
+		</li>
+	</ul>
+
+	<div class="app-bar-element place-right">
+		<span class="dropdown-toggle">
+			<span class="mif-user"></span>
+			{$Think.session.admin.username|subtext=12}
+		</span>
+		<div class="app-bar-drop-container padding10 place-right no-margin-top block-shadow fg-dark" data-role="dropdown" data-no-close="true" style="width: 150px">
+			<!-- <h2 class="text-light">Quick settings</h2> -->
+			<ul class="unstyled-list fg-dark">
+				<li>
+					<a href="__MODULE__/Login/logout" class="fg-white fg-hover-red">退出</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="app-bar-pullbutton automatic" style="display: none;"></div>
+	<div class="clearfix" style="width: 0;"></div>
+	<nav class="app-bar-pullmenu hidden flexstyle-app-bar-menu" style="display: none;">
+		<ul class="app-bar-pullmenubar hidden app-bar-menu"></ul>
+	</nav>
+</div>

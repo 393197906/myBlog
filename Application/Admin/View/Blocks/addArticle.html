@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<include file="Blocks/import"/>
+	<title>{$title}</title>
+</head>
+<body>
+
+	<div class="flex-grid">
+		<div class="row">
+			<div class="cell size12">
+				<h3>
+					添加文章<small> AddArticle</small>
+					<span class="mif-plus place-right"></span>
+				</h3>
+				<hr class="bg-red thin"></div>
+		</div>
+  <form action="__MODULE__/Code/doAddArticle" id="article" method="post">
+		<div class="row">
+			<div class="cell size12">
+				<label for="">
+					<h4>
+						文章标题
+						<small>(为您的文章填写标题)</small>
+					</h4>
+				</label>
+				<div class="input-control text full-size ">
+					<input type="text"  name="title" placeholder="填写标题"></div>
+				<div class="row">
+					<div class="cell size6 padding10 no-padding-top no-padding-bottom no-padding-left">
+						<label for="">
+							<h4>
+								文章专题
+								<small>(为您的文章选择专题)</small>
+							</h4>
+						</label>
+						<div class="input-control select full-size">
+							<select name="subject"  id="subject">
+								<volist name="subject" id="vo">
+                            <option value="{$vo.cname}">{$vo.cname}</option>
+                        </volist>
+							</select>
+						</div>
+					</div>
+
+				</div>
+
+
+				<div class="row">
+					<div class="cell size12">
+						<label for="">
+							<h4>文章内容</h4>
+						</label>
+							<script id="editor" name="content" type="text/plain">
+                    </script>
+					</div>
+				</div>
+				<div class="row">
+					<div class="cell size12">
+						<button class="button primary full-size" type="submit" id="postarticle">保存</button>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="cell size12">
+						<a onclick="history.go(-1)"><button class="button danger full-size">返回</button></a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		</form>
+
+		<div class="row">
+			<div class="cell size12"></div>
+		</div>
+	</div>
+</body>
+</html>
+
+<!-- 配置文件 -->
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script>
+    $(document).ready(function(){
+
+            var value = $("#subject").val();
+            $.post("__MODULE__/Content/getClass",
+                    {
+                        name:value
+                    },
+                    function(data,status){
+                        $("#classname").html(data);
+                    });
+
+
+
+        $("#subject").focusout(function(){
+            var value = $(this).val();
+            $.post("__MODULE__/Content/getClass",
+                    {
+                        name:value
+                    },
+                    function(data,status){
+                        $("#classname").html(data);
+                    });
+        })
+    });
+
+    var ue = UE.getEditor('editor');
+</script>
