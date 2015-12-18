@@ -31,3 +31,16 @@
 body{
 	font-family: "微软雅黑";
 }
+
+a{
+	color:#000;
+}
+
+a:hover{
+	color:#337ab7;
+	text-decoration: none;
+}
+
+blockquote{
+	font-size:1.50rem ;
+}

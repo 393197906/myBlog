@@ -22,17 +22,17 @@ class SubjectController extends Controller
     public function subjectList() {
         $node = D('node');
         $data = $node->where(array("pid" => '0'))->select();
-        $this->DG_getList($data);
+        self::DG_getList($data);
         $this->assign("subjectList", $data);
         $this->display();
     }
     
-    protected function DG_getList(&$arr) {
+    public static function DG_getList(&$arr) {
          //递归取数据
         $count = count($arr);
         for ($i = 0; $i != $count; $i++) {
             $arr[$i]['zi'] = M('node')->where(array('pid' => $arr[$i]['id']))->select();
-            $this->DG_getList($arr[$i]['zi']);
+            self::DG_getList($arr[$i]['zi']);
             
             //递归
             

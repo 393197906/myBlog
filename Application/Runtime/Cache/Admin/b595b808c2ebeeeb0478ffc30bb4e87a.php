@@ -124,14 +124,19 @@
 	<div class="main">
 		<div class="left">
 			<ul class="sidebar2 left-sidebar dark" style="border:0;">
-    <li class="title">专题管理</li>
-    <li class="list active" id="<?php echo ($vo["ename"]); ?>">
-        <a href="/myBlog/index.php/Admin/Subject/subjectList" target="frame">
-        <span class="mif-list icon"></span>
-        专题管理
+    <li class="title"><?php echo ($nodeName); ?></li>
+    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><li class="list" id="<?php echo ($vo["ename"]); ?>">
+        <a href="/myBlog/index.php/Admin/Code/lists?id=<?php echo ($vo["id"]); ?>" target="frame">
+        <span class="mif-minus icon"></span>
+        <?php echo ($vo["cname"]); ?>
         </a>
-    </li>
-</ul>
+    </li><?php endforeach; endif; else: echo "" ;endif; ?>
+</ul> 
+
+	<!-- <?php function outLeft($arr){ $count = count($arr); if(!$count){return;} echo "<ul class=\"d-menu\" data-role=\"dropdown\" style=\"display: none;\">"; for($i=0;$i!=$count;$i++){ if(is_array($arr[$i]['zi'])){ } else{ echo "<li class=\"list\" id=\"<?php echo ($arr[$i]['ename']); ?>\"><a href=\"/myBlog/index.php/Admin/Code/lists?id=<?php echo ($arr[$i]['id']); ?>\" target=\"frame\"><?php echo ($arr[$i]['cname']); ?></a></li>"; } } echo "</ul>"; } ?>-->
+<!-- <div class="ztitle"><h4>编码</h4></div> 
+	<?php function outLeft2($arr){ $count = count($arr); if(!$count){return;} echo "<ul>"; for($i=0;$i!=$count;$i++){ echo "<li class='red'><a href=\"\">".$arr[$i]['cname']."</a></li>"; if(is_array($arr[$i]['zi'])){ outLeft2($arr[$i]['zi']); } } echo "</ul>"; } outLeft2($list); ?>-->
+
 			<!--左侧菜单-->
 		</div>
 		<div class="right">

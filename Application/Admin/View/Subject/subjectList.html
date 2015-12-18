@@ -8,7 +8,6 @@
 	td input{
 		width:100%;
 		height:100%;
-		/*border:1px solid red;*/
 	}
 	</style>
 </head>
@@ -43,7 +42,7 @@
                             function DG_printList($arr,$colorId=0){
                                 $count = count($arr);
                                 for($i =0;$i!=$count;$i++){
-                                    echo "<tr style=\"background-color:".$_GET['color'][$colorId]."\">";
+                                    echo "<tr class='togg' style=\"background-color:".$_GET['color'][$colorId]."\">";
                                     echo "<td>".$arr[$i]['id']."</td>";
                                     echo "<td>".$arr[$i]['cname']."</td>";
                                     echo "<td>".$arr[$i]['ename']."</td>";
@@ -58,11 +57,12 @@
                                     <button class=\"button danger delete\" >删除</button>
                                      </td>"; 
                                     echo "</tr>";
-
+                                    echo "<div class='hidee'>";
                                     if(is_array($arr[$i]['zi'])){
                                         $newColorId = $colorId+1;  //新颜色
                                         DG_printList($arr[$i]['zi'],$newColorId);
                                     }
+                                    echo "</div>";
                                 }
                                 
                             }
@@ -89,7 +89,9 @@
 		 /* var title = $('title').text();
 		  console.log(title);
 		  $('#'+title, window.parent.document).addClass('active').siblings().removeClass('active');   */
- 		
+ 		 $('.togg').click(function(){
+             
+        })
 		 //add
         $("#add").click(function(){
             $(this).hide();
@@ -196,6 +198,10 @@
 
         //delete
         $(".delete").click(function(){
+            var boll = confirm("确定要删除吗？");
+            if(!boll){
+                return;
+            }
             var id = $(this).parent().parent().find('td').eq(0).text();
             $.post("__MODULE__/Subject/doDeleteSubject",
                     {

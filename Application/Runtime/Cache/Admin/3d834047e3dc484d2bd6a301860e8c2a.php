@@ -69,7 +69,7 @@
 										<button class="button danger dropdown-toggle">更多</button>
 										<ul class="split-content d-menu place-right" data-role="dropdown">
 											<li>
-												<a href="/myBlog/index.php/Admin/Content/editArticle?id=<?php echo ($vo["id"]); ?>">编辑</a>
+												<a href="/myBlog/index.php/Admin/Code/editArticle?id=<?php echo ($vo["id"]); ?>">编辑</a>
 											</li>
 											<li class="delete">
 												<a href="">删除</a>
@@ -98,23 +98,6 @@
 	</div>
 	<span class="dialog-close-button "></span>
 </div>
-	
-	<div class="container-fluid" style="padding:0">
-		<div class="col-md-2 sidebar" style="padding: 0;max-width:240px">
-
-			
-		</div>
-		<div class="col-md-10 col-md-offset-2" style="margin-top:50px;">
-			<div class="col-md-12" style="height:20px;"></div>
-			<?php if($_GET['cfrag']=='detial'){ ?>
-			
-			<?php }elseif($_GET['cfrag']=='edit'){ ?>
-			
-			<?php }else{ ?>
-			
-			<?php } ?>
-		</div>
-	</div>
 </body>
 </html>
 <script>
@@ -126,7 +109,7 @@
          //recommend
 		$('.recommend').click(function(){
 			var id = $(this).attr('id');
-			$.post('/myBlog/index.php/Admin/Content/doRecommendArticle', {id:id}, function(data) {
+			$.post('/myBlog/index.php/Admin/Code/doRecommendArticle', {id:id}, function(data) {
 				$("#info").text(data['info'][0]);
 				var dialog = $("#dialog").data('dialog');
 				dialog.open();
@@ -143,8 +126,12 @@
 		//delete
 		$(".delete").click(function(event) {
 			event.preventDefault();
+			var qr = confirm("确定要删除吗？");
+			if(!qr){
+				return;
+			}
 			var id = $(this).parent().parent().siblings().eq(0).attr('id');
-			$.post('/myBlog/index.php/Admin/Content/doDelArticle', {id:id}, function(data) {
+			$.post('/myBlog/index.php/Admin/Code/doDelArticle', {id:id}, function(data) {
 				getDialog(data['info']);
                         if(data['status']==1){
 	                        setTimeout(function(){

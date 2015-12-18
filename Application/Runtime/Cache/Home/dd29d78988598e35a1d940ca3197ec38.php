@@ -24,14 +24,14 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav ">
-                        <li><a href="/myBlog/index.php/Home/Code">编码<span class="sr-only"></span></a></li>
-                        <li><a href="#">娱乐</a></li>
+                        <li><a href="/myBlog/index.php/Home/Code/index?id=1">编码<span class="sr-only"></span></a></li>
+                        <li><a href="/myBlog/index.php/Home/Code/index?id=2">娱乐</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪 <span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">魔兽世界</a></li>
+                                <li><a href="/myBlog/index.php/Home/Code/index?id=3">魔兽世界</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="#">暗黑3</a></li>
+                                <li><a href="/myBlog/index.php/Home/Code/index?id=4">暗黑3</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -51,27 +51,27 @@
             <div class="row">
                 <div class="col-md-9">
                     <ol class="breadcrumb">
-                        <li><a href="#">首页</a></li>
-                        <li class="active">编码</li>
+                        <li><a href="/myBlog/index.php/Home/Index/index">首页</a></li>
+                        <?php $cou = count($mianbao); for($i=$cou-1;$i>0;$i--){ echo "<li><a href='/myBlog/index.php/Home/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a></li>"; } echo "<li>".$mianbao[0]['cname']."</li>"; ?>
                     </ol>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <span class="label label-default">PHP</span>
-                            <a href=""><span class="label label-default">javascript</span></a>
-                            <span class="label label-default">html</span>
-                            <span class="label label-default">css</span>
+                            <?php if(is_array($nodeList)): $i = 0; $__LIST__ = $nodeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myBlog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p><span class="label label-default">default</span></p>
-                            <p>fsdfsdfsfsfsdfsfsdfsdfdsfs</p>
-                            <p class="p-bottom">
-                            <button class="btn btn-default btn-margin">赞</button>
-                            <button class="btn btn-default btn-margin">浏览</button>
-                            <a href="/myBlog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>"><button class="btn btn-default btn-margin" style="float: right;">阅读全文</button></a></p>
-                            <hr class="hr-bottom">
+                            <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><h1><?php echo (subtext(strip_tags($vo["title"]),23)); ?></h1>
+                                <p><span class="label label-default"><?php echo ($vo["label"]); ?></span></p>
+                                <p><img src="/myBlog/Public/images/600.jpg" style="max-width: 200px;"><img src="/myBlog/Public/images/logo.jpg"  style="max-width: 200px;margin-left:10px;"></p>
+                                <!-- <p><?php echo (subtext(htmlspecialchars_decode($vo["content"]),50)); ?></p> -->
+                                <p><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),200)); ?></p>
+                                <p class="p-bottom">
+                                <span ><span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span> <span class="badge" style="background-color: #777"><?php echo ($vo["rise"]); ?></span></span>
+                                <span style="margin-left: 20px;">
+                                <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span> <span class="badge" style="background-color: #777"><?php echo ($vo["view"]); ?></span></span>
+                                <a href="/myBlog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" style="float:right">阅读全文 <span class="glyphicon glyphicon-menu-right" style="top:3px;"></span></a></p>
+                                <hr class="hr-bottom"><?php endforeach; endif; else: echo "" ;endif; ?>
                         </div>
                     </div>
                 </div>

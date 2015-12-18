@@ -48,7 +48,7 @@
 							</h4>
 						</label>
 						<div class="input-control select full-size">
-							<select name="subject"  id="subject">
+							<select name="label"  id="subject">
 								<?php if(is_array($subject)): $i = 0; $__LIST__ = $subject;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cname"]); ?>"><?php echo ($vo["cname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 							</select>
 						</div>

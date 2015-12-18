@@ -1,9 +1,21 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<include file="Blocks/import"/>
-	<title>{$title}</title>
+	<link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myBlog/Public/css/public.css">
+<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myBlog/Public/js/metro.min.js"></script>
+<script src="/myBlog/Public/js/public.js"></script>
+<script src="/myBlog/Public/js/procity.js"></script>
+<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
+<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+
+	<title><?php echo ($title); ?></title>
 </head>
 <body>
 
@@ -11,12 +23,12 @@
 		<div class="row">
 			<div class="cell size12">
 				<h3>
-					添加文章<small> AddArticle</small>
-					<span class="mif-plus place-right"></span>
+					编辑文章<small> EditArticle</small>
+					<span class="mif-pencil place-right"></span>
 				</h3>
 				<hr class="bg-red thin"></div>
 		</div>
-  <form action="__MODULE__/Code/doAddArticle" id="article" method="post">
+  <form action="/myBlog/index.php/Admin/Code/doAddArticle" id="article" method="post">
 		<div class="row">
 			<div class="cell size12">
 				<label for="">
@@ -26,7 +38,7 @@
 					</h4>
 				</label>
 				<div class="input-control text full-size ">
-					<input type="text"  name="title" placeholder="填写标题"></div>
+					<input type="text"  name="title" placeholder="填写标题" value='<?php echo ($article["title"]); ?>'></div>
 				<div class="row">
 					<div class="cell size6 padding10 no-padding-top no-padding-bottom no-padding-left">
 						<label for="">
@@ -37,9 +49,7 @@
 						</label>
 						<div class="input-control select full-size">
 							<select name="label"  id="subject">
-								<volist name="subject" id="vo">
-                            <option value="{$vo.cname}">{$vo.cname}</option>
-                        </volist>
+								<?php if(is_array($subject)): $i = 0; $__LIST__ = $subject;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><option value="<?php echo ($vo["cname"]); ?>"><?php echo ($vo["cname"]); ?></option><?php endforeach; endif; else: echo "" ;endif; ?>
 							</select>
 						</div>
 					</div>
@@ -81,15 +91,15 @@
 </html>
 
 <!-- 配置文件 -->
-<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/myBlog/Public/ueditor/ueditor.config.js"></script>
 <!-- 编辑器源码文件 -->
-<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+<script type="text/javascript" src="/myBlog/Public/ueditor/ueditor.all.js"></script>
 <!-- 实例化编辑器 -->
 <script>
     $(document).ready(function(){
 
             var value = $("#subject").val();
-            $.post("__MODULE__/Content/getClass",
+            $.post("/myBlog/index.php/Admin/Content/getClass",
                     {
                         name:value
                     },
@@ -101,7 +111,7 @@
 
         $("#subject").focusout(function(){
             var value = $(this).val();
-            $.post("__MODULE__/Content/getClass",
+            $.post("/myBlog/index.php/Admin/Content/getClass",
                     {
                         name:value
                     },

@@ -11,27 +11,38 @@
             <div class="row">
                 <div class="col-md-9">
                     <ol class="breadcrumb">
-                        <li><a href="#">首页</a></li>
-                        <li class="active">编码</li>
+                        <li><a href="__MODULE__/Index/index">首页</a></li>
+                        <php>
+                            $cou = count($mianbao);
+                            for($i=$cou-1;$i>0;$i--){
+                                echo "<li><a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a></li>";
+                            }
+                            echo "<li>".$mianbao[0]['cname']."</li>";
+                        </php>
                     </ol>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <span class="label label-default">PHP</span>
-                            <a href=""><span class="label label-default">javascript</span></a>
-                            <span class="label label-default">html</span>
-                            <span class="label label-default">css</span>
+                            <volist id="vo" name="nodeList">
+                            <a href="__MODULE__/Code/index?id={$vo.id}"><span class="label label-default">{$vo.cname}</span></a>&nbsp;
+                            </volist>
                         </div>
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p><span class="label label-default">default</span></p>
-                            <p>fsdfsdfsfsfsdfsfsdfsdfdsfs</p>
-                            <p class="p-bottom">
-                            <button class="btn btn-default btn-margin">赞</button>
-                            <button class="btn btn-default btn-margin">浏览</button>
-                            <a href="__MODULE__/Code/detail?id={$vo.id}"><button class="btn btn-default btn-margin" style="float: right;">阅读全文</button></a></p>
-                            <hr class="hr-bottom">
+                            <volist id="vo" name="articleList">
+                                <h1>{$vo.title|strip_tags|subtext=23}</h1>
+                                <p><span class="label label-default">{$vo.label}</span></p>
+                                <p><img src="__PUBLIC__/images/600.jpg" style="max-width: 200px;"><img src="__PUBLIC__/images/logo.jpg"  style="max-width: 200px;margin-left:10px;"></p>
+                                <!-- <p>{$vo.content|htmlspecialchars_decode|subtext=50}</p> -->
+                                <p>{$vo.content|htmlspecialchars_decode|strip_tags|subtext=200}</p>
+                                <p class="p-bottom">
+                                <span ><span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span> <span class="badge" style="background-color: #777">{$vo.rise}</span></span>
+                                <span style="margin-left: 20px;">
+                                <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span> <span class="badge" style="background-color: #777">{$vo.view}</span></span>
+                                <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right">阅读全文 <span class="glyphicon glyphicon-menu-right" style="top:3px;"></span></a></p>
+                                <hr class="hr-bottom">
+                                
+                            </volist>
                         </div>
                     </div>
                 </div>

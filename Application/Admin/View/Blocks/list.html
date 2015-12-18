@@ -58,7 +58,7 @@
 										<button class="button danger dropdown-toggle">更多</button>
 										<ul class="split-content d-menu place-right" data-role="dropdown">
 											<li>
-												<a href="__MODULE__/Content/editArticle?id={$vo.id}">编辑</a>
+												<a href="__MODULE__/Code/editArticle?id={$vo.id}">编辑</a>
 											</li>
 											<li class="delete">
 												<a href="">删除</a>
@@ -81,23 +81,6 @@
 	</div>
 
 	<include file="Blocks/alert-info" />
-	<include file="Blocks/header"/>
-	<div class="container-fluid" style="padding:0">
-		<div class="col-md-2 sidebar" style="padding: 0;max-width:240px">
-
-			<include file="leftnavarticle"/>
-		</div>
-		<div class="col-md-10 col-md-offset-2" style="margin-top:50px;">
-			<div class="col-md-12" style="height:20px;"></div>
-			<php>if($_GET['cfrag']=='detial'){</php>
-			<include file="cfragarticledetial"/>
-			<php>}elseif($_GET['cfrag']=='edit'){</php>
-			<include file="cfragarticleedit"/>
-			<php>}else{</php>
-			<include file="fragarticlelist"/>
-			<php>}</php>
-		</div>
-	</div>
 </body>
 </html>
 <script>
@@ -109,7 +92,7 @@
          //recommend
 		$('.recommend').click(function(){
 			var id = $(this).attr('id');
-			$.post('__MODULE__/Content/doRecommendArticle', {id:id}, function(data) {
+			$.post('__MODULE__/Code/doRecommendArticle', {id:id}, function(data) {
 				$("#info").text(data['info'][0]);
 				var dialog = $("#dialog").data('dialog');
 				dialog.open();
@@ -126,8 +109,12 @@
 		//delete
 		$(".delete").click(function(event) {
 			event.preventDefault();
+			var qr = confirm("确定要删除吗？");
+			if(!qr){
+				return;
+			}
 			var id = $(this).parent().parent().siblings().eq(0).attr('id');
-			$.post('__MODULE__/Content/doDelArticle', {id:id}, function(data) {
+			$.post('__MODULE__/Code/doDelArticle', {id:id}, function(data) {
 				getDialog(data['info']);
                         if(data['status']==1){
 	                        setTimeout(function(){

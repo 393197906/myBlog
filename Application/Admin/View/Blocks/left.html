@@ -3,9 +3,47 @@
     <volist id="vo" name="list">
     <li class="list" id="{$vo.ename}">
         <a href="__CONTROLLER__/lists?id={$vo.id}" target="frame">
-        <span class="mif-list icon"></span>
+        <span class="mif-minus icon"></span>
         {$vo.cname}
         </a>
     </li>
     </volist>
-</ul>
+</ul> 
+
+	<!-- <php> 
+		function outLeft($arr){
+			$count = count($arr);
+			if(!$count){return;}
+			echo "<ul class=\"d-menu\" data-role=\"dropdown\" style=\"display: none;\">";
+			for($i=0;$i!=$count;$i++){
+				if(is_array($arr[$i]['zi'])){
+				/*	echo "<li class=\"stick\"><a class=\"dropdown-toggle\" href=\"#\">{$arr[$i]['cname']}</a>";
+	       			outLeft($arr[$i]['zi']);
+	       			echo "</li>" */
+				}
+				else{
+					echo "<li class=\"list\" id=\"{$arr[$i]['ename']}\"><a href=\"__CONTROLLER__/lists?id={$arr[$i]['id']}\" target=\"frame\">{$arr[$i]['cname']}</a></li>";
+				}
+				
+			}
+			echo "</ul>";
+		
+		}
+	</php>-->
+<!-- <div class="ztitle"><h4>编码</h4></div> 
+	<php>
+		function outLeft2($arr){
+			$count = count($arr);
+			if(!$count){return;}
+			echo "<ul>";
+			for($i=0;$i!=$count;$i++){
+				echo "<li class='red'><a href=\"\">".$arr[$i]['cname']."</a></li>";
+				if(is_array($arr[$i]['zi'])){
+	       			outLeft2($arr[$i]['zi']);
+				}
+			}
+			echo "</ul>";
+		
+		}
+		outLeft2($list);
+	</php>-->
