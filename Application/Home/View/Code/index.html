@@ -1,62 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <include file="Blocks/import" />
-    </head>
-    <body>
-        <include file="Blocks/nav" />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-9">
-                    <ol class="breadcrumb">
-                        <li><a href="__MODULE__/Index/index">首页</a></li>
-                        <php>
-                            $cou = count($mianbao);
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <include file="Blocks/import" />
+</head>
+<body>
+    <include file="Blocks/nav" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="__MODULE__/Index/index">首页</a>
+                    </li>
+                    <php>
+                        $cou = count($mianbao);
                             for($i=$cou-1;$i>0;$i--){
-                                echo "<li><a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a></li>";
+                                echo "
+                        <li>
+                            <a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
+                        </li>
+                        ";
                             }
-                            echo "<li>".$mianbao[0]['cname']."</li>";
-                        </php>
-                    </ol>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <volist id="vo" name="nodeList">
-                            <a href="__MODULE__/Code/index?id={$vo.id}"><span class="label label-default">{$vo.cname}</span></a>&nbsp;
-                            </volist>
-                        </div>
-                    </div>
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <volist id="vo" name="articleList">
-                                <h1>{$vo.title|strip_tags|subtext=23}</h1>
-                                <p><span class="label label-default">{$vo.label}</span></p>
-                                <p><img src="__PUBLIC__/images/600.jpg" style="max-width: 200px;"><img src="__PUBLIC__/images/logo.jpg"  style="max-width: 200px;margin-left:10px;"></p>
-                                <!-- <p>{$vo.content|htmlspecialchars_decode|subtext=50}</p> -->
-                                <p>{$vo.content|htmlspecialchars_decode|strip_tags|subtext=200}</p>
-                                <p class="p-bottom">
-                                <span ><span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span> <span class="badge" style="background-color: #777">{$vo.rise}</span></span>
-                                <span style="margin-left: 20px;">
-                                <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span> <span class="badge" style="background-color: #777">{$vo.view}</span></span>
-                                <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right">阅读全文 <span class="glyphicon glyphicon-menu-right" style="top:3px;"></span></a></p>
-                                <hr class="hr-bottom">
-                                
-                            </volist>
-                        </div>
+                            echo "
+                        <li>".$mianbao[0]['cname']."</li>
+                        ";
+                    </php>
+                </ol>
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <volist id="vo" name="nodeList">
+                            <a href="__MODULE__/Code/index?id={$vo.id}" style="text-decoration:none;">
+                                <span class="label label-default">{$vo.cname}</span>
+                            </a>
+                            &nbsp;
+                        </volist>
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="list-group">
-                        <a href="#" class="list-group-item active">
-                        <h4 class="list-group-item-heading">编码的乐趣</h4>
-                        <p class="list-group-item-text">放松放松放松发士大夫十分法大师傅士大夫犯得上发射点犯得上发射点</p>
-                        </a>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="padding-top:0;">
+                        <volist id="vo" name="articleList">
+                            <div class="row" style="padding-top:20px;">
+                                <div class="col-md-9">
+                                    <h2 style="padding-bottom: 10px;margin-top:10px;">{$vo.title|strip_tags|subtext=23}</h2>
+
+                                    <p style="padding-bottom: 10px;">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=120}</p>
+                                    <p class="p-bottom">
+                                        <span >
+                                            <span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span>
+                                            <span class="badge" style="background-color: #777">{$vo.rise}</span>
+                                        </span>
+                                        <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span>
+                                            <span class="badge" style="background-color: #777">{$vo.view}</span>
+                                        </span>
+                                        <span style="margin-left: 20px;">
+                                            <span class="label label-default">{$vo.label}</span>
+                                        </span>
+                                        <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right;text-decoration:none;">
+                                            阅读全文
+                                            <span class="glyphicon glyphicon-menu-right" style="top:3px;"></span>
+                                        </a>
+                                    </p>
+                                </div>
+                                <div class="col-md-3">
+                                    <img src="__PUBLIC__/images/logo.jpg" class="img-responsive ">
+                                </div>
+                            </div>
+
+                            <hr class="hr-bottom"></volist>
                     </div>
                 </div>
             </div>
-            <hr>
-            <include file="Blocks/footer" />
+            <div class="col-md-3">
+                <div class="list-group">
+                    <volist id="vo" name="recommend">
+                        <a href="__MODULE__/Code/detail?id={$vo.id}" class="list-group-item">
+                            <h4 class="list-group-item-heading">{$vo.title|subtext=15}</h4>
+                            <p class="list-group-item-text">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=20}</p>
+
+                        </a>
+                    </volist>
+                </div>
+            </div>
         </div>
-    </body>
+        <hr>
+        <include file="Blocks/footer" />
+    </div>
+</body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.list-group').children().eq(0).addClass('active');
+    });
+</script>

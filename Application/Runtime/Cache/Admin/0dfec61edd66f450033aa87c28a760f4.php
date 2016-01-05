@@ -3,18 +3,18 @@
 <head>
     <title>后台管理系统</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/public.css">
-<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
-<script src="/myBlog/Public/js/metro.min.js"></script>
-<script src="/myBlog/Public/js/public.js"></script>
-<script src="/myBlog/Public/js/procity.js"></script>
-<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
-<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+    <link rel="stylesheet" href="/myblog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/public.css">
+<script src="/myblog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myblog/Public/js/metro.min.js"></script>
+<script src="/myblog/Public/js/public.js"></script>
+<script src="/myblog/Public/js/procity.js"></script>
+<!-- <script src="/myblog/Public/js/validate.js"></script> -->
+<!-- <script src="/myblog/Public/js/procity.js"></script> -->
 
     <style>
         .login-form {
@@ -61,7 +61,7 @@
 </head>
 <body class="bg-dark">
     <div class="login-form padding20 block-shadow">
-        <form method="post" action="/myBlog/index.php/Admin/Login/login">
+        <form method="post" action="/myblog/index.php/Admin/Login/login">
             <h1 class="text-light " style="font-family:'微软雅黑';letter-spacing: 5px ">
                 DaWenXi</h1>
             <hr class="thin bg-red"/ style="margin-bottom: 20px;">
@@ -134,9 +134,9 @@
             var username = $("input[name='username']").val();
             var password = $("input[name='password']").val();
             var verify = $("input[name='verify']").val();
-            $.post('/myBlog/index.php/Admin/Login/login', {username: username, password: password, verify:verify}, function (data) {
+            $.post('/myblog/index.php/Admin/Login/login', {username: username, password: password, verify:verify}, function (data) {
                 if (data['status'] == 1) {
-                    location.href = "/myBlog/index.php/Admin/"+data['url'];
+                    location.href = "/myblog/index.php/Admin/"+data['url'];
                     alert(data['info']);
                 } else {
                     alert(data['info']);

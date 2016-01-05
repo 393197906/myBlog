@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/public.css">
-<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
-<script src="/myBlog/Public/js/metro.min.js"></script>
-<script src="/myBlog/Public/js/public.js"></script>
-<script src="/myBlog/Public/js/procity.js"></script>
-<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
-<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+	<link rel="stylesheet" href="/myblog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/public.css">
+<script src="/myblog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myblog/Public/js/metro.min.js"></script>
+<script src="/myblog/Public/js/public.js"></script>
+<script src="/myblog/Public/js/procity.js"></script>
+<!-- <script src="/myblog/Public/js/validate.js"></script> -->
+<!-- <script src="/myblog/Public/js/procity.js"></script> -->
 
 	<title><?php echo ($title); ?></title>
 	<style>
@@ -98,7 +98,7 @@
          $("#table").delegate("#addsave",'click',function(){
             var valEname = $(this).parent().prev().prev().find('input').val() ;
             var valCname = $(this).parent().prev().prev().prev().find('input').val() ;
-            $.post("/myBlog/index.php/Admin/Subject/doAddSubject",
+            $.post("/myblog/index.php/Admin/Subject/doAddSubject",
                     {
                         cname:valCname,
                         ename:valEname,
@@ -127,7 +127,7 @@
             var pid = $(this).parent().parent().prev().children().eq(0).text();
             var cname = $(this).parent().siblings().eq(1).children().val() ;
             var ename = $(this).parent().siblings().eq(2).children().val();
-            $.post("/myBlog/index.php/Admin/Subject/doAddSubject",
+            $.post("/myblog/index.php/Admin/Subject/doAddSubject",
                     {
                         cname:cname,
                         ename:ename,
@@ -167,7 +167,7 @@
             var valname = $("#rename").val();
             var valtheme = $("#theme").val();
             var valclass = $("#classname").val();
-            $.post("/myBlog/index.php/Admin/Content/editSubject",
+            $.post("/myblog/index.php/Admin/Content/editSubject",
                     {    id:id,
                         name:valname,
                         theme:valtheme,
@@ -195,7 +195,7 @@
                 return;
             }
             var id = $(this).parent().parent().find('td').eq(0).text();
-            $.post("/myBlog/index.php/Admin/Subject/doDeleteSubject",
+            $.post("/myblog/index.php/Admin/Subject/doDeleteSubject",
                     {
                         id:id
                     },

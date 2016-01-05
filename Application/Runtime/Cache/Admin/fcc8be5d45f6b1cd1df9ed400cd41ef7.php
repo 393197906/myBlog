@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <title>成功提示</title>
-    <link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/public.css">
-<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
-<script src="/myBlog/Public/js/metro.min.js"></script>
-<script src="/myBlog/Public/js/public.js"></script>
-<script src="/myBlog/Public/js/procity.js"></script>
-<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
-<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+    <link rel="stylesheet" href="/myblog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/public.css">
+<script src="/myblog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myblog/Public/js/metro.min.js"></script>
+<script src="/myblog/Public/js/public.js"></script>
+<script src="/myblog/Public/js/procity.js"></script>
+<!-- <script src="/myblog/Public/js/validate.js"></script> -->
+<!-- <script src="/myblog/Public/js/procity.js"></script> -->
 
 </head>
 <body>

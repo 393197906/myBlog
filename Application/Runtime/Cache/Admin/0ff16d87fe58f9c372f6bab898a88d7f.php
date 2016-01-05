@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/public.css">
-<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
-<script src="/myBlog/Public/js/metro.min.js"></script>
-<script src="/myBlog/Public/js/public.js"></script>
-<script src="/myBlog/Public/js/procity.js"></script>
-<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
-<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+	<link rel="stylesheet" href="/myblog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/public.css">
+<script src="/myblog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myblog/Public/js/metro.min.js"></script>
+<script src="/myblog/Public/js/public.js"></script>
+<script src="/myblog/Public/js/procity.js"></script>
+<!-- <script src="/myblog/Public/js/validate.js"></script> -->
+<!-- <script src="/myblog/Public/js/procity.js"></script> -->
 
 	<title><?php echo ($title); ?></title>
 </head>
@@ -28,7 +28,7 @@
 				</h3>
 				<hr class="bg-red thin"></div>
 		</div>
-  <form action="/myBlog/index.php/Admin/Code/doAddArticle" id="article" method="post">
+  <form action="/myblog/index.php/Admin/Code/doAddArticle" id="article" method="post">
 		<div class="row">
 			<div class="cell size12">
 				<label for="">
@@ -91,15 +91,15 @@
 </html>
 
 <!-- 配置文件 -->
-<script type="text/javascript" src="/myBlog/Public/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="/myblog/Public/ueditor/ueditor.config.js"></script>
 <!-- 编辑器源码文件 -->
-<script type="text/javascript" src="/myBlog/Public/ueditor/ueditor.all.js"></script>
+<script type="text/javascript" src="/myblog/Public/ueditor/ueditor.all.js"></script>
 <!-- 实例化编辑器 -->
 <script>
     $(document).ready(function(){
 
             var value = $("#subject").val();
-            $.post("/myBlog/index.php/Admin/Content/getClass",
+            $.post("/myblog/index.php/Admin/Content/getClass",
                     {
                         name:value
                     },
@@ -111,7 +111,7 @@
 
         $("#subject").focusout(function(){
             var value = $(this).val();
-            $.post("/myBlog/index.php/Admin/Content/getClass",
+            $.post("/myblog/index.php/Admin/Content/getClass",
                     {
                         name:value
                     },

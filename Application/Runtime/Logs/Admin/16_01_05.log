@@ -1,0 +1,154 @@
+[ 2016-01-05T11:54:13+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T11:54:20+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T11:54:55+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T11:57:06+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2016-01-05T11:57:08+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `recommend`='0' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2016-01-05T11:57:10+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `recommend`='0' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T11:57:12+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T13:34:17+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T13:34:28+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T13:34:36+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='0' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T13:34:37+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T13:34:39+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='0' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T13:34:42+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 5 LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T13:57:39+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 4 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 4 [ RunTime:0.0000s ]
+
+[ 2016-01-05T14:09:54+08:00 ] ::1 /myblog/index.php/Admin/Code/doDelArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: DELETE FROM `article` WHERE `id` = 4 [ RunTime:0.0010s ]
+
+[ 2016-01-05T14:10:02+08:00 ] ::1 /myblog/index.php/Admin/Code/doDelArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: DELETE FROM `article` WHERE `id` = 5 [ RunTime:0.0000s ]
+
+[ 2016-01-05T14:10:37+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T14:12:15+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T14:12:19+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T14:12:54+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-05T14:22:48+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 8 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 8 [ RunTime:0.0000s ]
+
+[ 2016-01-05T15:40:59+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+

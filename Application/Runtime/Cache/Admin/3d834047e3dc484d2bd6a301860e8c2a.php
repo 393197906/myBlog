@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="/myBlog/Public/css/metro.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-responsive.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-schemes.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-rtl.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/metro-icons.min.css">
-<link rel="stylesheet" href="/myBlog/Public/css/public.css">
-<script src="/myBlog/Public/js/jquery-2.1.4.min.js"></script>
-<script src="/myBlog/Public/js/metro.min.js"></script>
-<script src="/myBlog/Public/js/public.js"></script>
-<script src="/myBlog/Public/js/procity.js"></script>
-<!-- <script src="/myBlog/Public/js/validate.js"></script> -->
-<!-- <script src="/myBlog/Public/js/procity.js"></script> -->
+	<link rel="stylesheet" href="/myblog/Public/css/metro.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-responsive.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-schemes.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-rtl.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/metro-icons.min.css">
+<link rel="stylesheet" href="/myblog/Public/css/public.css">
+<script src="/myblog/Public/js/jquery-2.1.4.min.js"></script>
+<script src="/myblog/Public/js/metro.min.js"></script>
+<script src="/myblog/Public/js/public.js"></script>
+<script src="/myblog/Public/js/procity.js"></script>
+<!-- <script src="/myblog/Public/js/validate.js"></script> -->
+<!-- <script src="/myblog/Public/js/procity.js"></script> -->
 
 	<title><?php echo ($subject["ename"]); ?></title>
 </head>
@@ -27,7 +27,7 @@
 				</h3>
 				<hr class="bg-grayLighter thin"></div>
 		</div>
-		<a href="/myBlog/index.php/Admin/Code/addArticle?id=<?php echo ($_GET['id']); ?>">
+		<a href="/myblog/index.php/Admin/Code/addArticle?id=<?php echo ($_GET['id']); ?>">
 			<button class="button danger full-size">
 				<span class="mif-plus"></span>
 				添加文章
@@ -62,14 +62,14 @@
 									<?php }else{ ?>
 									<button class="button warning recommend" id='<?php echo ($vo["id"]); ?>'>推荐</button>
 									<?php } ?>
-									<a href="/myBlog/index.php/Home/Service/article?id=<?php echo ($vo["id"]); ?>" target="_blank">
+									<a href="/myblog/index.php/Home/Service/article?id=<?php echo ($vo["id"]); ?>" target="_blank">
 										<button class="button primary btn">查看</button>
 									</a>
 									<div class="dropdown-button">
 										<button class="button danger dropdown-toggle">更多</button>
 										<ul class="split-content d-menu place-right" data-role="dropdown">
 											<li>
-												<a href="/myBlog/index.php/Admin/Code/editArticle?id=<?php echo ($vo["id"]); ?>">编辑</a>
+												<a href="/myblog/index.php/Admin/Code/editArticle?id=<?php echo ($vo["id"]); ?>">编辑</a>
 											</li>
 											<li class="delete">
 												<a href="">删除</a>
@@ -109,7 +109,7 @@
          //recommend
 		$('.recommend').click(function(){
 			var id = $(this).attr('id');
-			$.post('/myBlog/index.php/Admin/Code/doRecommendArticle', {id:id}, function(data) {
+			$.post('/myblog/index.php/Admin/Code/doRecommendArticle', {id:id}, function(data) {
 				$("#info").text(data['info'][0]);
 				var dialog = $("#dialog").data('dialog');
 				dialog.open();
@@ -131,7 +131,7 @@
 				return;
 			}
 			var id = $(this).parent().parent().siblings().eq(0).attr('id');
-			$.post('/myBlog/index.php/Admin/Code/doDelArticle', {id:id}, function(data) {
+			$.post('/myblog/index.php/Admin/Code/doDelArticle', {id:id}, function(data) {
 				getDialog(data['info']);
                         if(data['status']==1){
 	                        setTimeout(function(){
