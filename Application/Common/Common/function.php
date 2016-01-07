@@ -80,7 +80,7 @@ function utf8_str($str)
     return '汉英混合';
 }
 
-//分页函数
+//分页函数 (bootstrap)
 function  PAGE($count, $pageNum = 12)
 {
     $Page = new \Think\Page($count, $pageNum);// 实例化分页类 传入总记录数和每页显示的记录数
@@ -92,7 +92,7 @@ function  PAGE($count, $pageNum = 12)
 
 }
 
-//后台分页函数
+//后台分页函数 (metro css 3)
 function  PAGEADMIN($count,$pageNum=12){
     $Page       = new \Think\Pageadmin($count,$pageNum);// 实例化分页类 传入总记录数和每页显示的记录数
 

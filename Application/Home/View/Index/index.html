@@ -1,100 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <include file="Blocks/import" />
-    </head>
-    <body>
-        <include file="Blocks/nav" />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <div class="bg-logo" style="background-image: url(__PUBLIC__/images/600.jpg);"></div>
-                        <div class="caption text-center">
-                            <img src="__PUBLIC__/images/logo.jpg" alt="" class="logo">
-                            <h3>达文西</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                    	<div class="panel-body text-center">
-                    		<h4><i class="fa fa-weibo fa-1x"></i> 微博 <small>WeiBo</small></h4>
-                    		<img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img">
-                    		<h4><i class="fa fa-weixin fa-1x"></i> 微信 <small>WeiXin</small></h4>
-                    		<img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img">
-                    	</div>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <include file="Blocks/import" />
+</head>
+<body>
+    <include file="Blocks/nav" />
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pull">
+                <div class="thumbnail">
+                    <div class="bg-logo" style="background-image: url(__PUBLIC__/images/600.jpg);"></div>
+                    <div class="caption text-center">
+                        <img src="__PUBLIC__/images/shanzhi.gif"  class="logo">
+                        <h3>达文西</h3>
+                        <p>...</p>
+                        <p>
+                           
+                            <a href="#" class="btn btn-default" role="button">Button</a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6"  style="padding-left: 0;">
-                    <div class="panel panel-default">
+
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h4> <i class="fa fa-weibo fa-1x"></i>
+                            微博
+                            <small>WeiBo</small>
+                        </h4>
+                        <img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img">
+                        <h4> <i class="fa fa-weixin fa-1x"></i>
+                            微信
+                            <small>WeiXin</small>
+                        </h4>
+                        <img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img"></div>
+                </div>
+            </div>
+            <div class="col-md-6"  style="padding-left: 0;">
+                <div class="panel panel-default">
+                    <volist id="vo" name="articleList">
                         <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p>fsdfsdfsfsfsdfs</p>
-                            <span class="label label-default">default</span>
-                            <hr class="bg-primary">
-                        </div>
-                        <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p>fsdfsdfsfsfsdfs</p>
-                            <hr class="bg-danger">
-                        </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h1>
+                                        <a href="__MODULE__/Code/detail?id={$vo.id}">{$vo.title|subtext=30}</a>
+                                    </h1>
+                                    <p>{$vo.content|htmlspecialchars_decode|strip_tags|subtext=80}</p>
+                                    <span class="label label-default">{$vo.label}</span>
+                                </div>
+                                <div class="col-md-4" style="padding-top:30px;">
+                                    <a href="__MODULE__/Code/detail?id={$vo.id}">
+                                        <img src="{$vo.logo}" class="img-responsive "></a>
+                                </div>
+                            </div>
+
+                            <hr class="bg-primary"></div>
+                    </volist>
+                </div>
+            </div>
+            <div class="col-md-3 pull"  style="padding-left: 0;">
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-code"></i>
+                        编码
+                    </div>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <volist id="vo" name="code">
+                            <a href="__MODULE__/Code/index?id={$vo.id}"><span class="label label-default">{$vo.cname}</span></a>&nbsp;
+                        </volist>
+
                     </div>
                 </div>
-                <div class="col-md-3"  style="padding-left: 0;">
-                    <div class="panel panel-default">
-                        <div class="panel-heading pannel-title"><span class="glyphicon glyphicon-tag"></span> 热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
-
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-toggle-right"></i>
+                        娱乐
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <volist id="vo" name="fun">
+                               <a href="__MODULE__/Code/index?id={$vo.id}"><span class="label label-default">{$vo.cname}</span></a>&nbsp;
+                        </volist>
 
-                        </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-bitcoin"></i>
+                        暴雪
+                    </div>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <volist id="vo" name="bx">
+                               <a href="__MODULE__/Code/index?id={$vo.id}"><span class="label label-default">{$vo.cname}</span></a>&nbsp;
+                        </volist>
 
-                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
-
-            <include file="Blocks/footer" />
         </div>
-    </body>
+        <hr>
+
+        <include file="Blocks/footer" />
+    </div>
+</body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.labelh span').hover(function(){
+           $(this).removeClass('label-default');
+            $(this).addClass('label-danger');
+        },function(){
+            $(this).removeClass('label-danger');
+            $(this).addClass('label-default');
+        })
+
+        $('.pull').stickUp();
+    });
+</script>

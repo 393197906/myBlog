@@ -28,7 +28,7 @@
 				</h3>
 				<hr class="bg-red thin"></div>
 		</div>
-  <form action="/myblog/index.php/Admin/Code/doAddArticle" id="article" method="post">
+  <form action="/myblog/index.php/Admin/Code/doEditArticle?id=<?php echo ($article["id"]); ?>" id="article" method="post">
 		<div class="row">
 			<div class="cell size12">
 				<label for="">
@@ -97,29 +97,13 @@
 <!-- 实例化编辑器 -->
 <script>
     $(document).ready(function(){
-
-            var value = $("#subject").val();
-            $.post("/myblog/index.php/Admin/Content/getClass",
-                    {
-                        name:value
-                    },
-                    function(data,status){
-                        $("#classname").html(data);
-                    });
-
-
-
-        $("#subject").focusout(function(){
-            var value = $(this).val();
-            $.post("/myblog/index.php/Admin/Content/getClass",
-                    {
-                        name:value
-                    },
-                    function(data,status){
-                        $("#classname").html(data);
-                    });
-        })
+ 		$("#subject  option[value='<?php echo ($article["label"]); ?>'] ").attr("selected", true);  //下拉默认
     });
-
     var ue = UE.getEditor('editor');
+    	ue.ready(function() {
+        //设置编辑器的内容
+            var content = '<?php echo (htmlspecialchars_decode($article["content"])); ?>';
+	        ue.setContent(content);
+    	});
+
 </script>

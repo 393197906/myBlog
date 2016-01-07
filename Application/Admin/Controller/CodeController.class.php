@@ -13,6 +13,7 @@ class CodeController extends Controller
         }
     }
     
+    //首页
     public function index() {
         $id = I('get.id', '1');
         $node = D('node');
@@ -28,6 +29,7 @@ class CodeController extends Controller
         $this->display("Index/index");
     }
     
+    //列表页
     public function lists() {
         $id = I('get.id');
         $article = D('article');
@@ -72,8 +74,8 @@ class CodeController extends Controller
         $data['ofid'] = M('node')->where(array('cname' => $data['label']))->getField('id');
         $data['author'] = "god";
         $data['posttime'] = time();
+        $data['logo'] = $this->getImg(htmlspecialchars_decode($data['content']));
         $article = D('article');
-        
         if ($article->create($data)) {
             $status = $article->add($data);
             if ($status) {
@@ -126,16 +128,40 @@ class CodeController extends Controller
         }
     }
 
-
+   //文章编辑显示页面
     public function editArticle(){
         $id = I('get.id');
         $node = D('node');
-        $pid = $node->where(array('id' => $id))->getField('pid');
-        $subject = $node->where(array('pid' => $pid))->select();
-        $this->assign('subject', $subject);
-
-        $data = M('article')->where(array('id'=>$id))->find();     
+        $data = M('article')->where(array('id'=>$id))->find(); 
+        $pid = $node->where(array('id'=>$data['ofid']))->getField('pid');
+        $subject = $node->where(array("pid"=>$pid))->select();
+        $this->assign('subject',$subject);
         $this->assign('article',$data);
         $this->display("Blocks/editArticle");
     }
+
+    //文章编辑处理页面
+    public function doEditArticle()
+    {
+        $data = I('post.');
+        $id= I('get.id');
+        $article = D('article');
+        if($article->create($data)){
+            $status  = $article->where(array('id'=>$id))->save($data);
+            if($status){
+                $this->success("修改成功");
+            }else{
+                $this->error("修改失败");
+            }
+        }else{
+            $this->error($article->getError());
+        }
+    }
+    //获取文章内图片地址
+    private function getImg($str){
+        $preg = "/<img([^>]*)\s*src=('|\")([^'\"]+)('|\")/";
+        preg_match("$preg",$str,$arr);
+        return $arr[3];
+    }
+
 }

@@ -1,0 +1,605 @@
+[ 2016-01-06T08:40:26+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:40:50+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:41:10+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:41:13+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:41:18+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:41:31+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:45:55+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:45:57+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:46:13+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:46:48+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:47:29+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:47:55+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:27+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:30+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:33+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:34+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:36+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:40+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:49:51+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:58:43+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T08:59:36+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:00:10+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:01:08+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:01:26+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:06:31+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:12:25+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:12:28+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:38:07+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:38:32+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:38:45+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:51:19+08:00 ] ::1 /myblog/index.php/Admin/Code/doDelArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0020s ]
+SQL: DELETE FROM `article` WHERE `id` = 8 [ RunTime:0.0000s ]
+
+[ 2016-01-06T09:51:25+08:00 ] ::1 /myblog/index.php/Admin/Code/doDelArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: DELETE FROM `article` WHERE `id` = 9 [ RunTime:0.0010s ]
+
+[ 2016-01-06T09:51:30+08:00 ] ::1 /myblog/index.php/Admin/Code/doDelArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: DELETE FROM `article` WHERE `id` = 10 [ RunTime:0.0010s ]
+
+[ 2016-01-06T09:51:38+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:59:07+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:59:13+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:59:19+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T09:59:55+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:00:15+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:00:25+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:00:51+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:01:10+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:01:17+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:03:23+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:04:05+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:05:32+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:06:15+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:06:38+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:06:41+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:06:47+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:32:41+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:32:46+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:34:26+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:34:28+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:35:14+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:35:16+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:35:46+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:26+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:32+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:36+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:41+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:45+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:54+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:56+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:38:58+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:39:05+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:39:08+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:39:23+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:39:57+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:40:05+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:40:09+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:40:13+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:40:23+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:40:27+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:45:24+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:45:33+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:45:35+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:46:05+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:46:07+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:52:36+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:52:46+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:53:16+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:53:33+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:53:35+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:54:06+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:54:29+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:54:47+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:56:55+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T10:58:37+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T11:08:00+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T11:08:05+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T11:08:16+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T14:34:35+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 14 [ RunTime:0.0010s ]
+
+[ 2016-01-06T15:12:59+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:13:03+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:13:08+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:13:10+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:14:09+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:14:17+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-06T15:14:18+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+

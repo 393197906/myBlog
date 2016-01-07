@@ -1,0 +1,39 @@
+<!-- 模态框 -->
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="success">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content text-center" style="color:#d9534f">
+					<h3><i class="fa fa-hand-peace-o"></i></h3>
+					<hr>
+					<p class="wContent"></p>
+					<hr>
+				</div>
+			</div>
+		</div>
+
+		<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="error">
+			<div class="modal-dialog modal-sm">
+				<div class="modal-content text-center" style="color:red">
+					<h3><i class="fa fa-warning"></i></h3>
+					<hr>
+					<p class="wContent"></p>
+					<hr>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			function warning(info,status){
+				if(status=='success'){
+					var mod = $('#success');
+				}else{
+					var mod = $('#error');
+				}
+				mod.find(".wContent").text(info);	
+				mod.modal(
+					{
+						keyboard:true
+					}
+				);
+			}
+		</script>
+		<!-- 模态框结束 -->

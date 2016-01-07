@@ -49,8 +49,34 @@ class CodeController extends Controller
        $this->assign('recommend',$recommendData);
        $this->assign('article',$data);
        $this->assign("mianbao",$mianbao);//面包屑导航
+
+       //评论
+       $commentData = $this->getCommentData($id);
+       $this->assign('comment',$commentData);
        $this->display();
     }
+    //获取评论数据
+    private function getCommentData($id){
+      $commentData = M()->table("comment c,user u")
+                      ->field("c.id,c.uid,c.ofid,c.content,c.posttime,u.pickname,u.logo")
+                      ->where("c.uid=u.id")
+                      ->where(array('c.ofid'=>$id))->order("posttime desc")->select();
+       $count = count($commentData);
+       for($i=0;$i!=$count;$i++){
+          $commentData[$i]['child'] = M()->table("comment2 c,user u")
+                                          ->field("c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo")
+                                          ->where("c.uid=u.id")
+                                          ->where(array("pid"=>$commentData[$i]['id']))
+                                          ->order("posttime desc")
+                                          ->select();
+
+          $cou = count($commentData[$i]['child']);
+          for($j=0;$j!=$cou;$j++){
+              $commentData[$i]['child'][$j]['touserpickname'] = M("user")->where(array('id'=>$commentData[$i]['child'][$j]['touid']))->getField('pickname');
+          } 
+       }       
+       return $commentData;        
+     }
     //点赞
     public function doRise(){
         $id = I('post.id');
@@ -77,6 +103,61 @@ class CodeController extends Controller
     		$this->mianbao($data['pid'],$arr);
     	}
 
+    }
+
+    //搜索页
+    public function search(){
+       $search = I('post.search');
+       $article = M('article');
+       $where['title']=array('like','%'.$search.'%');
+       $data = $article->where($where)->select(); //搜索结果
+       $empty = "<h1 class='text-center' style='color:#d9534f'>搜索结果为空</h1>";
+       //推荐数据
+       $recommendData = $article->where(array('recommend'=>'1'))->limit('0,5')->select();
+       $this->assign('recommend',$recommendData);
+       $this->assign('empty',$empty);
+       $this->assign('searchList',$data);
+       $this->display();
+
+    }
+
+    //评论
+    public function comment(){
+        $data = I('post.');
+        //测试用user
+        $data['uid'] = '15';
+        $data['posttime']=time();
+        $comment = D('comment');
+
+        if($comment->create($data)){
+            $status = $comment->add($data);
+            if($status){
+              $this->success("评论成功");
+            }else{
+              $this->error("评论失败");
+            }
+        }else{
+          $this->error($comment->getError());
+        }
+    }
+    //评论2
+     public function comment2(){
+        $data = I('post.');
+        //测试用user
+        $data['uid'] = '15';
+        $data['posttime']=time();
+        $comment = D('comment2');
+
+        if($comment->create($data)){
+            $status = $comment->add($data);
+            if($status){
+              $this->success("评论成功");
+            }else{
+              $this->error("评论失败");
+            }
+        }else{
+          $this->error($comment->getError());
+        }
     }
 
 }

@@ -96,27 +96,16 @@
                     <li>
                         <a href="/myblog/index.php/Home/Index/index">首页</a>
                     </li>
-                    <?php $cou = count($mianbao); for($i=$cou-1;$i>0;$i--){ echo "
-                        <li>
-                            <a href='/myblog/index.php/Home/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
-                        </li>
-                        "; } echo "
-                        <li>".$mianbao[0]['cname']."</li>
-                        "; ?>
+                    <li>搜索结果</li>
                 </ol>
                 <div class="panel panel-default">
-                    <div class="panel-body labelh ">
-                        <?php if(is_array($nodeList)): $i = 0; $__LIST__ = $nodeList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>" style="text-decoration:none;">
-                                <span class="label label-default" id="node<?php echo ($vo["id"]); ?>"><?php echo ($vo["cname"]); ?></span>
-                            </a>
-                            &nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
-                    </div>
-                </div>
-                <div class="panel panel-default">
                     <div class="panel-body" style="padding-top:0;">
-                        <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="padding-top:20px;">
+                        <?php if(is_array($searchList)): $i = 0; $__LIST__ = $searchList;if( count($__LIST__)==0 ) : echo "$empty" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="padding-top:20px;">
                                 <div class="col-md-9">
-                                    <h2 style="padding-bottom: 10px;margin-top:10px;"><?php echo (subtext(strip_tags($vo["title"]),23)); ?></h2>
+                                    <?php $str = $_POST['search']; $restr = '
+                                        <span style="color:#d9534f">'.$str.'</span>
+                                        '; $vo['title']=str_replace($str,$restr,$vo['title']); ?>
+                                    <h2 style="padding-bottom: 10px;margin-top:10px;"><?php echo ($vo["title"]); ?></h2>
 
                                     <p style="padding-bottom: 10px;"><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),120)); ?></p>
                                     <p class="p-bottom">
@@ -131,25 +120,23 @@
                                         <span style="margin-left: 20px;">
                                             <span class="label label-default"><?php echo ($vo["label"]); ?></span>
                                         </span>
-                                        <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" style="float:right;text-decoration:none;">
-                                            阅读全文
-                                            
-                                        </a>
+                                        <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" style="float:right;text-decoration:none;">阅读全文</a>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <?php if(empty($vo['logo'])){ ?>
-                                     <img src="/myblog/Public/images/logo.jpg" class="img-responsive ">
+                                    <img src="/myblog/Public/images/logo.jpg" class="img-responsive ">
                                     <?php }else{ ?>
                                     <img src="<?php echo ($vo["logo"]); ?>" class="img-responsive ">
-                                     <?php } ?>
+                                    <?php } ?>
                                 </div>
                             </div>
 
-                            <hr class="hr-bottom"><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <hr class="hr-bottom"><?php endforeach; endif; else: echo "$empty" ;endif; ?>
                     </div>
                 </div>
             </div>
+            <!-- 推荐文章 -->
             <div class="col-md-3">
                 <div class="list-group">
                     <?php if(is_array($recommend)): $i = 0; $__LIST__ = $recommend;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" class="list-group-item">

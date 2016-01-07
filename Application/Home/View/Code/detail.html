@@ -24,6 +24,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-9">
+
 				<ol class="breadcrumb">
 					<li>
 						<a href="__MODULE__/Index/index">首页</a>
@@ -41,104 +42,244 @@
 					<li>{$article.title|subtext=30}</li>
 				</ol>
 
-				<h2>{$article.title}</h2>
-				<div>
-					{$article.posttime|date='Y-m-d H:i:s',###} by
-					<a href="#">{$article.author}</a>
-					<ul class="list-inline pull-right nano">
-						<li> <i class="fa fa-weibo fa-1x"></i>
-						</li>
-						<li> <i class="fa fa-weixin fa-1x"></i>
-						</li>
-						<li>
-							<i class="fa fa-eye fa-1x"></i> {$article.view}
-						</li>
-						<li id="rise">
-							<i class="fa fa-thumbs-up fa-1x"></i> {$article.rise}
-						</li>
-						
-					</ul>
-				</div>
-				{$article.content|htmlspecialchars_decode}
-				<div class="row">
-					<div class="col-md-12 text-center">
-						<div class="col-md-3 col-md-offset-3 share">
-							<p>
-								<i class="fa fa-weibo fa-3x"></i>
-							</p>
-							<p>分享到微博</p>
-						</div>
-						<div class="col-md-3 share">
-							<p>
-								<i class="fa fa-weixin fa-3x"></i>
-							</p>
-							<p>分享到微信</p>
-						</div>
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h2>{$article.title}</h2>
+						<div>
+							{$article.posttime|date='Y-m-d H:i:s',###} by
+							<a href="#">{$article.author}</a>
+							<ul class="list-inline pull-right nano">
+								<li> <i class="fa fa-weibo fa-1x"></i>
+								</li>
+								<li> <i class="fa fa-weixin fa-1x"></i>
+								</li>
+								<li>
+									<i class="fa fa-eye fa-1x"></i>
+									{$article.view}
+								</li>
+								<li id="rise">
+									<i class="fa fa-thumbs-up fa-1x"></i>
+									{$article.rise}
+								</li>
 
-						<!-- <i class="fa fa-weixin fa-3x"></i>
-					-->
-				</div>
-				<div class="col-md-12">
-					<nav>
-						<ul class="pager">
-							<php>if(!empty($article['fid'])){</php>
-							<li>
-								<a href="__MODULE__/Code/detail?id={$article.fid}">上</a>
-							</li>
-							<php>
-								}
+							</ul>
+						</div>
+						{$article.content|htmlspecialchars_decode}
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<div class="col-md-3 col-md-offset-3 share">
+									<p>
+										<i class="fa fa-weibo fa-3x"></i>
+									</p>
+									<p>分享到微博</p>
+								</div>
+								<div class="col-md-3 share">
+									<p>
+										<i class="fa fa-weixin fa-3x"></i>
+									</p>
+									<p>分享到微信</p>
+								</div>
+
+								<!-- <i class="fa fa-weixin fa-3x"></i>
+							-->
+						</div>
+						<div class="col-md-12">
+							<nav>
+								<ul class="pager">
+									<php>if(!empty($article['fid'])){</php>
+									<li>
+										<a href="__MODULE__/Code/detail?id={$article.fid}">上</a>
+									</li>
+									<php>
+										}
                 if(!empty($article['nid'])){
-							</php>
-							<li>
-								<a href="__MODULE__/Code/detail?id={$article.nid}">下</a>
-							</li>
-							<php>}</php>
-						</ul>
-					</nav>
+									</php>
+									<li>
+										<a href="__MODULE__/Code/detail?id={$article.nid}">下</a>
+									</li>
+									<php>}</php>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-12">
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<h3>
+								评论列表
+								<small>comment list</small>
+							</h3>
+							<hr>
+							<volist id="comment" name="comment">
+								<div class="row commentList">
+									<div class="col-md-2 text-center center-block">
+										<input type="hidden" name='uid' value={$comment.uid}>
+										<img src="__PUBLIC__/images/{$comment.logo}" class="youke" alt="Responsive image">
+										<p>{$comment.pickname}</p>
+									</div>
+									<div class="col-md-8" style="padding-top:10px;">
+										<p>{$comment.content}</p>
+										<p class="posttime">{$comment.posttime|date="Y-m-d H:i:s",###}</p>
+									</div>
+									<div class="col-md-2 text-center" style="padding-top:10px;">
+										<a href="#" class="hf">回复</a>
+									</div>
+									<div class="col-md-10 col-md-offset-2">
+										<volist id="comment2" name="comment.child">
+											<hr>
+											<div class="row">
+												<div class="col-md-2 text-center center-block">
+													<input type="hidden" name='uid' value={$comment2.uid}>
+													<img src="__PUBLIC__/images/{$comment2.logo}" class="youke" alt="Responsive image">
+													<p>{$comment2.pickname}</p>
+												</div>
+												<div class="col-md-7" style="padding-top:10px;">
+													<p>
+													<php>if($comment2[uid]!=$comment2[touid]){</php>
+													回复 {$comment2.touserpickname} : 
+													<php>}</php>
+													{$comment2.content}
+													</p>
+													<p class="posttime">{$comment2.posttime|date="Y-m-d H:i:s",###}</p>
+												</div>
+												<div class="col-md-3 text-center" style="padding-top:10px;">
+													<a href="#" class="hf">回复</a>
+												</div>
+											</div>
+										</volist>
+									</div>
+								</div>
+								<!-- 回复模块 -->
+								<div class="row area" style="display:none;">
+									<div class="col-md-2"></div>
+									<div class="col-md-10">
+										<textarea class="form-control area" rows="3" name="content"></textarea>
+										<br>
+										<input type="hidden" name='uuid'> <!--不初始化-->
+										<input type="hidden" name='id' value={$comment.id}>
+										<button class="btn btn-danger  pull-right huifu2" data-loading-text="正在提交...">回复</button>
+										<button type="button" class="btn btn-link pull-right cancel">取消</button>
+									</div>
+								</div>
+
+								<hr></volist>
+
+								<script type="text/javascript">
+									$(document).ready(function() {
+										$('.huifu2').click(function(){
+											var $btn = $(this).button('loading');
+											var uid ="{$Think.session.id}";
+											var content = $(this).siblings(".area").val();
+											content = $.trim(content.replace(/回复\s.+\s:/,''));
+											if(content ==''){
+												warning("评论内容不能为空",'error');
+												$btn.button('reset')
+												return ;
+											}
+											var pid =  $(this).siblings("input[name='id']").val();
+											var touid  = $(this).siblings("input[name='uuid']").val();
+
+											$.post('__MODULE__/Code/comment2',
+											 {
+											 	content:content,
+											 	uid:uid,
+											 	pid:pid,
+											 	touid:touid
+											 }, 
+											 function(data) {
+											 	if(data['status']==1){
+											 		warning(data['info'],'success');
+											 		window.history.go(0);
+											 	}else{
+											 		warning(data['info'],'error');
+											 		$btn.button('reset')
+											 	}
+											});
+										})
+									});
+								</script>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<h3>
+							我要评论
+							<small>comment list</small>
+						</h3>
+						<hr>
+						<div class="row">
+							<div class="col-md-2 text-center center-block" style="padding-top: 1rem;">
+								<img src="__PUBLIC__/images/bg.jpg" class="youke" alt="Responsive image">
+								<p>游客</p>
+							</div>
+							<div class="col-md-10">
+								<textarea class="form-control area" rows="4" name="content"></textarea>
+								<br>
+								<button class="btn btn-danger pull-right huifu1" data-loading-text="正在提交...">提交</button>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="col-md-3">
-			<!--<div class="sidebar-module sidebar-module-inset">
-			<h4>关于</h4>
-			<p>犯得上发射点犯得上发射点防守方的说法是发射点发射点</p>
-		</div>
-		-->
-		<div>
-			<h4>推荐</h4>
-			<ol class="list-unstyled">
-				<volist id="vo" name="recommend">
-					<a href="">
-						<li>{$vo.title|subtext=20}</li>
-					</a>
-				</volist>
-			</ol>
-		</div>
-		<div>
-			<h4>其他</h4>
-			<ol class="list-unstyled">
-				<li>
-					<a href="#">GitHub</a>
-				</li>
-				<li>
-					<a href="#">Twitter</a>
-				</li>
-				<li>
-					<a href="#">Facebook</a>
-				</li>
-			</ol>
+	</div>
+	<div class="col-md-3">
+		<!--<div class="sidebar-module sidebar-module-inset">
+		<h4>关于</h4>
+		<p>犯得上发射点犯得上发射点防守方的说法是发射点发射点</p>
+	</div>
+	-->
+	<div class="panel panel-default">
+		<div class="panel-body">
+			<div>
+				<h4>推荐</h4>
+				<ol class="list-unstyled">
+					<volist id="vo" name="recommend">
+						<a href="">
+							<li>{$vo.title|subtext=20}</li>
+						</a>
+					</volist>
+				</ol>
+			</div>
+			<div>
+				<hr>
+				<h4>其他</h4>
+				<ol class="list-unstyled">
+					<li>
+						<a href="#">GitHub</a>
+					</li>
+					<li>
+						<a href="#">Twitter</a>
+					</li>
+					<li>
+						<a href="#">Facebook</a>
+					</li>
+				</ol>
+			</div>
 		</div>
 	</div>
+
+</div>
 
 </div>
 <hr>
 <include file="Blocks/footer" />
 </div>
+<include file="Blocks/warning" />
 </body>
 </html>
-
 <script type="text/javascript">
 	$(document).ready(function() {
+		//点赞
 		var num = $('#rise').text();
 		$('#rise').click(function(){
 			var id = {$Think.get.id};
@@ -149,12 +290,63 @@
 			  function(data) {
 				if(data['status']==1){
 					++num;
-					$('#rise').text(num).css({"color":"red"});
+					$('#rise').text("<i class=\"fa fa-thumbs-up fa-1x\"></i>"+num).css({"color":"red"});
 
 				}else{
-					alert(data['info']);
+					warning(data['info'],'error');
 				}
 			});
 		})
+
+		//回复栏显示
+		$('.hf').click(function(e){
+			e.preventDefault();
+			var area = $(this).parents(".commentList").next();
+			area.css({"display":"block"});
+			area.siblings('.area').css({"display":"none"}); //通报元素隐藏
+			var username = $(this).parent().siblings().eq(0).text();  //用户名
+			var uid = $(this).parent().siblings().eq(0).find('input[name=\'uid\']').val();  //uid
+			username = $.trim(username);
+			var areatext = area.find(".area");
+			area.find('input[name="uuid"]').val(uid); //传过去
+			areatext.text("回复 "+username+" : ");
+
+		});
+
+		//回复栏隐藏
+		$(".cancel").click(function(e){
+			e.preventDefault();
+			$(this).parent().parent().css({"display":'none'});
+		})
+
+		//回复1
+		$('.huifu1').click(function(){
+			var $btn = $(this).button('loading')
+    		//$btn.button('reset')
+			var content = $("textarea[name='content']").val();
+			if(content===''){
+				warning("评论内容不能为空",'error');
+				$btn.button('reset')
+				return ;
+			}
+			var ofid = "{$Think.get.id}";
+			var uid = "{$Think.session.id}";
+			$.post('__MODULE__/Code/comment',
+				 {
+				 	content:content,
+				 	ofid:ofid,
+				 	uid:uid
+				 }, 
+				 function(data) {
+				 	if(data['status']==1){
+				 		warning(data['info'],'success');
+				 		window.history.go(0);
+				 	}else{
+				 		warning(data['info'],'error');
+				 		$btn.button('reset')
+				 	}
+			});
+		})
+
 	});
 </script>

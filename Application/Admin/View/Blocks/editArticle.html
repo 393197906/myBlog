@@ -16,7 +16,7 @@
 				</h3>
 				<hr class="bg-red thin"></div>
 		</div>
-  <form action="__MODULE__/Code/doAddArticle" id="article" method="post">
+  <form action="__MODULE__/Code/doEditArticle?id={$article.id}" id="article" method="post">
 		<div class="row">
 			<div class="cell size12">
 				<label for="">
@@ -87,29 +87,13 @@
 <!-- 实例化编辑器 -->
 <script>
     $(document).ready(function(){
-
-            var value = $("#subject").val();
-            $.post("__MODULE__/Content/getClass",
-                    {
-                        name:value
-                    },
-                    function(data,status){
-                        $("#classname").html(data);
-                    });
-
-
-
-        $("#subject").focusout(function(){
-            var value = $(this).val();
-            $.post("__MODULE__/Content/getClass",
-                    {
-                        name:value
-                    },
-                    function(data,status){
-                        $("#classname").html(data);
-                    });
-        })
+ 		$("#subject  option[value='{$article.label}'] ").attr("selected", true);  //下拉默认
     });
-
     var ue = UE.getEditor('editor');
+    	ue.ready(function() {
+        //设置编辑器的内容
+            var content = '{$article.content|htmlspecialchars_decode}';
+	        ue.setContent(content);
+    	});
+
 </script>

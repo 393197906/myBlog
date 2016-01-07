@@ -14,36 +14,21 @@
                     <li>
                         <a href="__MODULE__/Index/index">首页</a>
                     </li>
-                    <php>
-                        $cou = count($mianbao);
-                            for($i=$cou-1;$i>0;$i--){
-                                echo "
-                        <li>
-                            <a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
-                        </li>
-                        ";
-                            }
-                            echo "
-                        <li>".$mianbao[0]['cname']."</li>
-                        ";
-                    </php>
+                    <li>搜索结果</li>
                 </ol>
                 <div class="panel panel-default">
-                    <div class="panel-body labelh ">
-                        <volist id="vo" name="nodeList">
-                            <a href="__MODULE__/Code/index?id={$vo.id}" style="text-decoration:none;">
-                                <span class="label label-default" id="node{$vo.id}">{$vo.cname}</span>
-                            </a>
-                            &nbsp;
-                        </volist>
-                    </div>
-                </div>
-                <div class="panel panel-default">
                     <div class="panel-body" style="padding-top:0;">
-                        <volist id="vo" name="articleList">
+                        <volist id="vo" name="searchList" empty="$empty">
                             <div class="row" style="padding-top:20px;">
                                 <div class="col-md-9">
-                                    <h2 style="padding-bottom: 10px;margin-top:10px;">{$vo.title|strip_tags|subtext=23}</h2>
+                                    <php>
+                                        $str = $_POST['search'];
+                                    $restr = '
+                                        <span style="color:#d9534f">'.$str.'</span>
+                                        ';
+                                    $vo['title']=str_replace($str,$restr,$vo['title']);
+                                    </php>
+                                    <h2 style="padding-bottom: 10px;margin-top:10px;">{$vo.title}</h2>
 
                                     <p style="padding-bottom: 10px;">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=120}</p>
                                     <p class="p-bottom">
@@ -58,18 +43,15 @@
                                         <span style="margin-left: 20px;">
                                             <span class="label label-default">{$vo.label}</span>
                                         </span>
-                                        <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right;text-decoration:none;">
-                                            阅读全文
-                                            
-                                        </a>
+                                        <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right;text-decoration:none;">阅读全文</a>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <php>if(empty($vo['logo'])){</php>
-                                     <img src="__PUBLIC__/images/logo.jpg" class="img-responsive ">
+                                    <img src="__PUBLIC__/images/logo.jpg" class="img-responsive ">
                                     <php>}else{</php>
                                     <img src="{$vo.logo}" class="img-responsive ">
-                                     <php>}</php>
+                                    <php>}</php>
                                 </div>
                             </div>
 
@@ -77,6 +59,7 @@
                     </div>
                 </div>
             </div>
+            <!-- 推荐文章 -->
             <div class="col-md-3">
                 <div class="list-group">
                     <volist id="vo" name="recommend">

@@ -1,0 +1,306 @@
+[ 2016-01-07T08:35:01+08:00 ] ::1 /myblog/index.php/Home/Code/search
+ERR: 非法操作:search
+
+[ 2016-01-07T09:15:12+08:00 ] ::1 /myblog/index.php/Home/Code/search
+ERR: XML标签语法错误 : id="vo" name="searchList" empty="<h1
+
+[ 2016-01-07T09:20:45+08:00 ] ::1 /myblog/index.php/Home/Code/search
+ERR: XML标签语法错误 : id="vo" name="searchList" empty=$empty
+
+[ 2016-01-07T14:04:55+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: UPDATE `article` SET `rise`=rise+1 WHERE `id` = 15 [ RunTime:0.0000s ]
+
+[ 2016-01-07T14:04:55+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T14:04:55+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T14:05:02+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T14:08:55+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T15:28:11+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-07T15:29:00+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-07T15:31:09+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: SQLSTATE[21000]: Cardinality violation: 1241 Operand should contain 1 column(s)
+
+[ 2016-01-07T16:28:04+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`) VALUES ('范德萨发生大','15','15') [ RunTime:0.0000s ]
+
+[ 2016-01-07T16:28:46+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('哈哈哈哈哈哈','15','15','1452155325') [ RunTime:0.0010s ]
+
+[ 2016-01-07T16:28:57+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('娜娜娜娜','15','15','1452155336') [ RunTime:0.0010s ]
+
+[ 2016-01-07T16:30:21+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('11111','15','15','1452155419') [ RunTime:0.0010s ]
+
+[ 2016-01-07T16:33:33+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0039s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('测试','15','15','1452155612') [ RunTime:0.0010s ]
+
+[ 2016-01-07T16:33:40+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('','15','15','1452155619') [ RunTime:0.0010s ]
+
+[ 2016-01-07T16:36:29+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('范德萨发生','15','15','1452155788') [ RunTime:0.0010s ]
+
+[ 2016-01-07T17:02:14+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('111','15','15','1452157333') [ RunTime:0.0010s ]
+
+[ 2016-01-07T17:04:09+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('fsdfsdfs','15','15','1452157448') [ RunTime:0.0010s ]
+
+[ 2016-01-07T17:06:20+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:06:22+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:06:51+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:06:53+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:06:54+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:06:57+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+
+[ 2016-01-07T17:06:59+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:07:04+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:07:20+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:07:23+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:07:25+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:07:48+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:07:50+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:07:51+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:07:52+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:07:53+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:08:01+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:08:02+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:08:04+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:08:05+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:12:06+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:12:10+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:12:11+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-07T17:12:14+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:13:20+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('111','15','15','1452157999') [ RunTime:0.0010s ]
+
+[ 2016-01-07T17:13:28+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('2222','15','15','1452158007') [ RunTime:0.0000s ]
+
+[ 2016-01-07T17:13:49+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('333','15','15','1452158028') [ RunTime:0.0000s ]
+
+[ 2016-01-07T17:16:03+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-07T17:16:05+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T17:16:06+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-07T18:03:28+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('haha','15','3','15','1452161007') [ RunTime:0.0000s ]
+
+[ 2016-01-07T18:03:51+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('nene','15','3','16','1452161030') [ RunTime:0.0000s ]
+
+[ 2016-01-07T18:04:15+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('haha','15','3','15','1452161054') [ RunTime:0.0000s ]
+
+[ 2016-01-07T18:05:10+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('1','15','3','15','1452161109') [ RunTime:0.0000s ]
+
+[ 2016-01-07T18:05:20+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('222','15','3','15','1452161119') [ RunTime:0.0000s ]
+
+[ 2016-01-07T18:09:30+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('hehe','15','2','15','1452161369') [ RunTime:0.0000s ]
+

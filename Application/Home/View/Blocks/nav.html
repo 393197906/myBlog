@@ -1,13 +1,13 @@
-<nav class="navbar  navbar-default ">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand active" href="__MODULE__/Index">
-                    <span class=""></span>DaWenxi
+<nav class="navbar  navbar-default">
+            <div class="container" style="background-color:white;">
+               <div class="navbar-header" id="left">
+                    <img src="__PUBLIC__/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
+                    <a class="navbar-brand active" href="__MODULE__/Index" style="padding-left: 2rem;">DaWenxi
                     </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav ">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
+                   <img src="__PUBLIC__/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
+                    <ul class="nav navbar-nav navbar-right" id="right">
                         <li><a href="__MODULE__/Code/index?id=1">编码<span class="sr-only"></span></a></li>
                         <li><a href="__MODULE__/Code/index?id=2">娱乐</a></li>
                         <li class="dropdown">
@@ -18,16 +18,55 @@
                                 <li><a href="__MODULE__/Code/index?id=4">暗黑3</a></li>
                             </ul>
                         </li>
+                        <form class="navbar-form navbar-left" role="search" action="__MODULE__/Code/search" method='post'>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索" name="search" value={$Think.post.search}>
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
                     </ul>
                     
-                    <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
+                   <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
                         <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="搜索">
                         </div>
                         <button type="submit" class="btn btn-default">搜索</button>
                     </form>
-                    </ul>
+                    </ul> -->
                     </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
+<script type="text/javascript">
+    // var width = window.screen.availWidth;
+    // 右-左
+    /*var left = parseInt($("#left").css("width"));
+    var right = parseInt($("#right").css("width"));
+    var width = parseInt($("#bs-example-navbar-collapse-1").css("width"));
+    width = width-left-80; //计算可行走距离
+    $('.zou').css({"right":right+'px'});  //初始化位置
+    setInterval(function(){
+        var bu = parseInt($('.zou').css('right')); 
+        if(bu>=width){
+            bu=right;
+        }
+        bu=bu+15; 
+        $('.zou').css({"right":bu+'px'}); 
+    }
+    , 200)*/
+    // 左-右
+    var left = parseInt($("#left").css("width"));
+    var right = parseInt($("#right").css("width"));
+    var width = parseInt($("#bs-example-navbar-collapse-1").css("width"));
+    width = width-right-80; //计算可行走距离
+    $('.zou').css({"left":(left+15)+'px'});  //初始化位置
+    setInterval(function(){
+        var bu = parseInt($('.zou').css('left')); 
+        if(bu>=width){
+            bu=left;
+        }
+        bu=bu+15; 
+        $('.zou').css({"left":bu+'px'}); 
+    }
+    , 200)
+</script>

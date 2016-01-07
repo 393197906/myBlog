@@ -1,26 +1,32 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link rel="stylesheet" href="/myblog/Public/css/bootstrap.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/myblog/Public/css/bootstrap.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/font-awesome.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/blog.css">
 <script src='/myblog/Public/js/jquery-2.1.4.min.js'></script>
 <script src='/myblog/Public/js/bootstrap.min.js'></script>
-    </head>
-    <body>
-        <nav class="navbar  navbar-default ">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand active" href="/myblog/index.php/Home/Index">
-                    <span class=""></span>DaWenxi
+<script src='/myblog/Public/js/stickUp.min.js'></script>
+<style type="text/css">
+	body{
+		background: url(/myblog/Public/images/bg.jpg);
+	}
+</style>
+</head>
+<body>
+    <nav class="navbar  navbar-default">
+            <div class="container" style="background-color:white;">
+               <div class="navbar-header" id="left">
+                    <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
+                    <a class="navbar-brand active" href="/myblog/index.php/Home/Index" style="padding-left: 2rem;">DaWenxi
                     </a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav ">
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
+                   <img src="/myblog/Public/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
+                    <ul class="nav navbar-nav navbar-right" id="right">
                         <li><a href="/myblog/index.php/Home/Code/index?id=1">编码<span class="sr-only"></span></a></li>
                         <li><a href="/myblog/index.php/Home/Code/index?id=2">娱乐</a></li>
                         <li class="dropdown">
@@ -31,112 +37,149 @@
                                 <li><a href="/myblog/index.php/Home/Code/index?id=4">暗黑3</a></li>
                             </ul>
                         </li>
+                        <form class="navbar-form navbar-left" role="search" action="/myblog/index.php/Home/Code/search" method='post'>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_POST['search']); ?>>
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
                     </ul>
                     
-                    <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
+                   <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
                         <form class="navbar-form navbar-left" role="search">
                         <div class="form-group">
                             <input type="text" class="form-control" placeholder="搜索">
                         </div>
                         <button type="submit" class="btn btn-default">搜索</button>
                     </form>
-                    </ul>
+                    </ul> -->
                     </div><!-- /.navbar-collapse -->
                     </div><!-- /.container-fluid -->
                 </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="thumbnail">
-                        <div class="bg-logo" style="background-image: url(/myblog/Public/images/600.jpg);"></div>
-                        <div class="caption text-center">
-                            <img src="/myblog/Public/images/logo.jpg" alt="" class="logo">
-                            <h3>达文西</h3>
-                            <p>...</p>
-                            <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
-                        </div>
-                    </div>
-
-                    <div class="panel panel-default">
-                    	<div class="panel-body text-center">
-                    		<h4><i class="fa fa-weibo fa-1x"></i> 微博 <small>WeiBo</small></h4>
-                    		<img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img">
-                    		<h4><i class="fa fa-weixin fa-1x"></i> 微信 <small>WeiXin</small></h4>
-                    		<img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img">
-                    	</div>
+<script type="text/javascript">
+    // var width = window.screen.availWidth;
+    // 右-左
+    /*var left = parseInt($("#left").css("width"));
+    var right = parseInt($("#right").css("width"));
+    var width = parseInt($("#bs-example-navbar-collapse-1").css("width"));
+    width = width-left-80; //计算可行走距离
+    $('.zou').css({"right":right+'px'});  //初始化位置
+    setInterval(function(){
+        var bu = parseInt($('.zou').css('right')); 
+        if(bu>=width){
+            bu=right;
+        }
+        bu=bu+15; 
+        $('.zou').css({"right":bu+'px'}); 
+    }
+    , 200)*/
+    // 左-右
+    var left = parseInt($("#left").css("width"));
+    var right = parseInt($("#right").css("width"));
+    var width = parseInt($("#bs-example-navbar-collapse-1").css("width"));
+    width = width-right-80; //计算可行走距离
+    $('.zou').css({"left":(left+15)+'px'});  //初始化位置
+    setInterval(function(){
+        var bu = parseInt($('.zou').css('left')); 
+        if(bu>=width){
+            bu=left;
+        }
+        bu=bu+15; 
+        $('.zou').css({"left":bu+'px'}); 
+    }
+    , 200)
+</script>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 pull">
+                <div class="thumbnail">
+                    <div class="bg-logo" style="background-image: url(/myblog/Public/images/600.jpg);"></div>
+                    <div class="caption text-center">
+                        <img src="/myblog/Public/images/shanzhi.gif"  class="logo">
+                        <h3>达文西</h3>
+                        <p>...</p>
+                        <p>
+                           
+                            <a href="#" class="btn btn-default" role="button">Button</a>
+                        </p>
                     </div>
                 </div>
-                <div class="col-md-6"  style="padding-left: 0;">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p>fsdfsdfsfsfsdfs</p>
-                            <span class="label label-default">default</span>
-                            <hr class="bg-primary">
-                        </div>
-                        <div class="panel-body">
-                            <h1>fdsfsfsf</h1>
-                            <p>fsdfsdfsfsfsdfs</p>
-                            <hr class="bg-danger">
-                        </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-body text-center">
+                        <h4> <i class="fa fa-weibo fa-1x"></i>
+                            微博
+                            <small>WeiBo</small>
+                        </h4>
+                        <img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img">
+                        <h4> <i class="fa fa-weixin fa-1x"></i>
+                            微信
+                            <small>WeiXin</small>
+                        </h4>
+                        <img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img"></div>
+                </div>
+            </div>
+            <div class="col-md-6"  style="padding-left: 0;">
+                <div class="panel panel-default">
+                    <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="panel-body">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h1>
+                                        <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>"><?php echo (subtext($vo["title"],30)); ?></a>
+                                    </h1>
+                                    <p><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),80)); ?></p>
+                                    <span class="label label-default"><?php echo ($vo["label"]); ?></span>
+                                </div>
+                                <div class="col-md-4" style="padding-top:30px;">
+                                    <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>">
+                                        <img src="<?php echo ($vo["logo"]); ?>" class="img-responsive "></a>
+                                </div>
+                            </div>
+
+                            <hr class="bg-primary"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                </div>
+            </div>
+            <div class="col-md-3 pull"  style="padding-left: 0;">
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-code"></i>
+                        编码
+                    </div>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <?php if(is_array($code)): $i = 0; $__LIST__ = $code;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+
                     </div>
                 </div>
-                <div class="col-md-3"  style="padding-left: 0;">
-                    <div class="panel panel-default">
-                        <div class="panel-heading pannel-title"><span class="glyphicon glyphicon-tag"></span> 热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
-
-                        </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-toggle-right"></i>
+                        娱乐
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <?php if(is_array($fun)): $i = 0; $__LIST__ = $fun;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
 
-                        </div>
                     </div>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">热门标签</div>
-                        <div class="panel-body" style="line-height:30px;">
-                            <span class="label label-default">phpfsdfsf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phpfsdf</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfsfp</span>
-                            <span class="label label-default">phfdfp</span>
-                            <span class="label label-default">php</span>
-                            <span class="label label-default">phfdsfp</span>
-                            <span class="label label-default">phfdsp</span>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading pannel-title">
+                        <i class="fa fa-bitcoin"></i>
+                        暴雪
+                    </div>
+                    <div class="panel-body labelh " style="line-height:30px;">
+                        <?php if(is_array($bx)): $i = 0; $__LIST__ = $bx;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
 
-                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
+        </div>
+        <hr>
 
-            <div class="row">
+        <div class="row">
                 <div class="col-md-12" style="padding:0;">
                     <footer>
                         <div class="row">
                             <div class="col-md-6 text-left">
-                                <p>© Design 2015</p>
+                                <p>© Design 2016</p>
                             </div>
                             <div class="col-md-6 text-right">
                                 <p>Author:  达文西</p>
@@ -145,6 +188,19 @@
                     </footer>
                 </div>
             </div>
-        </div>
-    </body>
+    </div>
+</body>
 </html>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.labelh span').hover(function(){
+           $(this).removeClass('label-default');
+            $(this).addClass('label-danger');
+        },function(){
+            $(this).removeClass('label-danger');
+            $(this).addClass('label-default');
+        })
+
+        $('.pull').stickUp();
+    });
+</script>
