@@ -202,7 +202,8 @@
 										<a href="#" class="hf">回复</a>
 									</div>
 									<div class="col-md-10 col-md-offset-2">
-										<?php if(is_array($comment["child"])): $i = 0; $__LIST__ = $comment["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comment2): $mod = ($i % 2 );++$i;?><hr>
+										<?php if(is_array($comment["child"])): $i = 0; $__LIST__ = $comment["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comment2): $mod = ($i % 2 );++$i;?><!--子评论-->
+											<hr>
 											<div class="row">
 												<div class="col-md-2 text-center center-block">
 													<input type="hidden" name='uid' value=<?php echo ($comment2["uid"]); ?>>
@@ -222,6 +223,15 @@
 													<a href="#" class="hf">回复</a>
 												</div>
 											</div><?php endforeach; endif; else: echo "" ;endif; ?>
+										<?php if($comment['childyu']>0){ ?>
+										<div class="row">
+											<div class="col-md-12 text-center">
+											<p class="load">点击显示剩余<?php echo ($comment["childyu"]); ?>条评论</p>
+											<!-- <button class="btn btn-danger btn-block btn-sm" data-loading-text="正在获取...">点击显示剩余<?php echo ($comment["childyu"]); ?>条评论</button> -->
+											</div>
+										</div>
+										<?php } ?>
+
 									</div>
 								</div>
 								<!-- 回复模块 -->
@@ -238,6 +248,19 @@
 								</div>
 
 								<hr><?php endforeach; endif; else: echo "" ;endif; ?>
+								<script>
+									//ajax 加载
+									$(document).ready(function() {
+										$('.load').click(function(e){
+											var load = $(this);
+											var id = load.parents('.commentList').next().find("input[name='id']").val();
+											$.post('/myblog/index.php/Home/Code/ajaxComment2', {pid:id}, function(data) {
+													load.parents(".col-md-offset-2").html(data);
+											},'json');
+
+										})
+									});
+								</script>
 
 								<script type="text/javascript">
 									$(document).ready(function() {
@@ -293,7 +316,7 @@
 								<p>游客</p>
 							</div>
 							<div class="col-md-10">
-								<textarea class="form-control area" rows="4" name="content"></textarea>
+								<textarea class="form-control area" rows="4" name="contents"></textarea>
 								<br>
 								<button class="btn btn-danger pull-right huifu1" data-loading-text="正在提交...">提交</button>
 							</div>
@@ -395,6 +418,35 @@
 			}
 		</script>
 		<!-- 模态框结束 -->
+<div id="top" style="width:100px;height:50px;position:fixed;bottom:10px;display: none;">
+	<button class="btn btn-default"><i class="fa fa-space-shuttle fa-2x fa-rotate-270"></i></button>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var width = $(window).width();
+		console.log(width);
+		var kyWidth = $('.container').width();
+		width = parseInt(width-kyWidth)/2;
+		$('#top').css({"right":width+"px"});  //控制距离
+
+		$(window).scroll(function(event) {
+			 var height = window.scrollY;
+			 if(height>=400){
+			 	$('#top').css({"display":"block"});
+			 }else{
+			 	$('#top').css({"display":"none"});
+			 }
+		});
+		//点击事件
+		$('#top').click(function(event) {
+			window.scrollTo(0,0);
+
+			/*TODO 动画效果*/
+		});
+
+	});
+</script>
 </body>
 </html>
 <script type="text/javascript">
@@ -419,15 +471,19 @@
 		})
 
 		//回复栏显示
-		$('.hf').click(function(e){
+		$('.commentList').delegate(".hf","click",function(e){
 			e.preventDefault();
 			var area = $(this).parents(".commentList").next();
-			area.css({"display":"block"});
-			area.siblings('.area').css({"display":"none"}); //通报元素隐藏
+			var areatext = area.find(".area");
+			area.css({"display":"block"});  //回复模块显示
+			area.siblings('.area').css({"display":"none"}); //同胞元素隐藏
+			var height = area.offset().top;  //回复模块距顶部距离
+			window.scrollTo(0,height-500);    //滚动条滚动
+			areatext.focus();  //聚焦
 			var username = $(this).parent().siblings().eq(0).text();  //用户名
 			var uid = $(this).parent().siblings().eq(0).find('input[name=\'uid\']').val();  //uid
 			username = $.trim(username);
-			var areatext = area.find(".area");
+			
 			area.find('input[name="uuid"]').val(uid); //传过去
 			areatext.text("回复 "+username+" : ");
 
@@ -443,7 +499,7 @@
 		$('.huifu1').click(function(){
 			var $btn = $(this).button('loading')
     		//$btn.button('reset')
-			var content = $("textarea[name='content']").val();
+			var content = $("textarea[name='contents']").val();
 			if(content===''){
 				warning("评论内容不能为空",'error');
 				$btn.button('reset')

@@ -1,0 +1,2271 @@
+[ 2016-01-08T08:42:18+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('回复 hehe : ','15','15','1452213737') [ RunTime:0.0010s ]
+
+[ 2016-01-08T08:44:39+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-08T08:44:41+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-08T08:44:43+08:00 ] ::1 /myblog/index.php/Home/Code/doRise
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-08T08:46:13+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('3','15','3','15','1452213972') [ RunTime:0.0000s ]
+
+[ 2016-01-08T08:46:18+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('4','15','3','15','1452213977') [ RunTime:0.0000s ]
+
+[ 2016-01-08T08:46:25+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('5','15','3','15','1452213984') [ RunTime:0.0000s ]
+
+[ 2016-01-08T08:46:33+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('6','15','3','15','1452213992') [ RunTime:0.0000s ]
+
+[ 2016-01-08T08:46:41+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('7','15','3','15','1452214000') [ RunTime:0.0000s ]
+
+[ 2016-01-08T08:55:23+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: XML标签语法错误 : id="comment2" name="comment.child offset="0" length='3"
+
+[ 2016-01-08T08:55:33+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: XML标签语法错误 : id="comment2" name="comment.child" offset="0" length='3"
+
+[ 2016-01-08T08:59:16+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: XML标签语法错误 : id="comment2" name="comment.child" offset="0" length='<?php echo ($a); ?
+
+[ 2016-01-08T08:59:27+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: XML标签语法错误 : id="comment2" name="comment.child" offset="0" length=<?php echo ($a); ?
+
+[ 2016-01-08T09:00:20+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: XML标签语法错误 : id="comment2" name="comment.child" offset="0" length='<?php echo $a; ?
+
+[ 2016-01-08T09:04:15+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('111','15','1','15','1452215054') [ RunTime:0.0000s ]
+
+[ 2016-01-08T09:23:18+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('fdsfsd','15','3','15','1452216197') [ RunTime:0.0000s ]
+
+[ 2016-01-08T09:29:55+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('发生的发生的','15','15','1452216594') [ RunTime:0.0000s ]
+
+[ 2016-01-08T09:52:40+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'posttime' in order clause is ambiguous
+
+[ 2016-01-08T09:52:58+08:00 ] ::1 /myblog/index.php/Home/Code/detail?id=15
+ERR: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'posttime' in order clause is ambiguous
+
+[ 2016-01-08T10:12:09+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('nana','15','16','15','1452219128') [ RunTime:0.0010s ]
+
+[ 2016-01-08T10:35:32+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0049s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 72 行.
+
+[ 2016-01-08T10:35:33+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 72 行.
+
+[ 2016-01-08T10:35:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 72 行.
+
+[ 2016-01-08T10:35:35+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 72 行.
+
+[ 2016-01-08T10:36:01+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 72 行.
+
+[ 2016-01-08T10:38:41+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: thid D:\WWW\myblog\Application\Home\Controller\CodeController.class.php 第 74 行.
+
+[ 2016-01-08T10:39:27+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T10:59:20+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T10:59:38+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T10:59:39+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:00+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:01+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:02+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:07+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:01:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:39+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:40+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:01:41+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:01:42+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:02:21+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:02:27+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:03:18+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:04:16+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0049s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:04:17+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:04:21+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:04:38+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:04:41+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:04:44+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:13:45+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:18:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2?pid=undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-08T11:18:27+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2?pid=undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-08T11:18:28+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2?pid=undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000977s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000977s ]
+
+[ 2016-01-08T11:18:29+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2?pid=undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-01-08T11:19:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2?pid=undefined
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000976s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000976s ]
+
+[ 2016-01-08T11:25:48+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:30:36+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:31:14+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:34:52+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:09+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:38:10+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:11+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:12+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:13+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:14+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:24+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:38:28+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:40:29+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:40:30+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:40:31+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:40:32+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0068s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:42:12+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:42:13+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:42:14+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0059s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:42:15+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:42:17+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:42:22+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:44:33+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002929s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:44:50+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0049s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T11:45:25+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:46:54+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T11:47:06+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:33:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:33:30+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:34:30+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:40:12+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:40:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:41:01+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:42:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:42:29+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:43:02+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:45:03+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:45:08+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:45:13+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:45:21+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:50:16+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:50:27+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0049s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:51:56+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:53:30+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:55:24+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:56:28+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:58:12+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:58:32+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:58:57+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:59:13+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T13:59:29+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T13:59:45+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:00:23+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:00:39+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:00:50+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:00:58+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:01:08+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:05:43+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:17:21+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0059s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:22:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:25:02+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:25:31+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你在哪呢','15','17','15','1452234330') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:25:46+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('我不知道','15','16','15','1452234345') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:25:56+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:26:05+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('娜娜娜娜难','15','3','15','1452234364') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:27:19+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('评论测试','14','15','1452234438') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:27:34+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002929s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('评论测试2','14','15','1452234453') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:27:47+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你好啊','15','19','15','1452234466') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:27:57+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你是？','15','19','15','1452234476') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:28:07+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你猜','15','19','15','1452234486') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:28:23+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('爱说不说','15','19','15','1452234501') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:28:46+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('明天上不上班？','15','19','15','1452234525') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:28:52+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = 3 ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:29:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0039s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:30:44+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你在哪','15','18','15','1452234643') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:31:35+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('哈哈','15','18','15','1452234694') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:31:55+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('呃呃','15','18','15','1452234714') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:32:27+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('呵呵了个呵呵','15','18','15','1452234746') [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:32:52+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('吼吼','15','18','15','1452234771') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:33:25+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:34:34+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:37:06+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('测试','17','1','15','1452235025') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:37:19+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你是？','15','1','17','1452235038') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:37:37+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('我是谁你不知道？','17','1','15','1452235056') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:39:16+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('呵呵','16','1','17','1452235155') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:39:27+08:00 ] ::1 /myblog/index.php/Home/Code/comment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: INSERT INTO `comment2` (`content`,`uid`,`pid`,`touid`,`posttime`) VALUES ('你是哈哈?','17','1','16','1452235166') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:41:07+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0049s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:44:25+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:45:01+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:45:06+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:45:24+08:00 ] ::1 /myblog/index.php/Home/Code/comment
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0020s ]
+SQL: INSERT INTO `comment` (`content`,`ofid`,`uid`,`posttime`) VALUES ('很好很强大','15','15','1452235523') [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:46:08+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:46:16+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T14:54:17+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T14:54:20+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:00:54+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T15:00:57+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:14:32+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:14:37+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T15:14:58+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:15:07+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:16:29+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:16:30+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:16:31+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:16:32+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004883s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:18:21+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T15:19:02+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T15:19:06+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T16:05:25+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T16:05:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0078s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T16:27:53+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-08T16:31:13+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T16:31:16+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0039s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T17:05:45+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '19' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-08T17:05:48+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0029s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '18' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+

@@ -55,26 +55,70 @@ class CodeController extends Controller
        $this->assign('comment',$commentData);
        $this->display();
     }
+
+    //ajax 子评论
+    public function ajaxComment2(){
+      $pid = I('post.pid');
+      $data = M()->table("comment2 c,user u")
+                                          ->field("c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo")
+                                          ->where("c.uid=u.id")
+                                          ->where(array("c.pid"=>$pid))
+                                          ->order("posttime desc")
+                                          ->select();
+     $cou = count($data);                               
+     for($j=0;$j!=$cou;$j++){
+         $data[$j]['touserpickname'] = M("user")->where(array('id'=>$data[$j]['touid']))->getField('pickname');
+     }
+     $str ="";
+     for($i=0;$i!=$cou;$i++){
+                      
+                      $str.="<hr>";
+                      $str.='<div class="row">';
+                      $str.= ' <div class="col-md-2 text-center center-block">';
+                      $str.=   ' <input type="hidden" name=\'uid\' value="'.$data[$i]['uid'].'">';
+                      $str.=   '<img src="/myblog/Public/images/'.$data[$i]['logo'].'" class="youke" alt="Responsive image">';
+                      $str.=    '<p>'.$data[$i]['pickname'].'</p>' ;
+                      $str.=  '</div>';
+                      $str.=  '<div class="col-md-7" style="padding-top:10px;">';
+                      $str.=    '<p>';
+                      if($data[$i]['uid']!=$data[$i]['touid']){
+                          $str.=    "回复 {$data[$i]['touserpickname']} : " ;
+                      }
+                      $str.=  $data[$i]['content'];
+                      $str.=    '</p>';
+                      $str.=   ' <p class="posttime">'.date("Y-m-d H:i:s",$data[$i]['posttime']).'</p> ';
+                      $str.=  '</div>';
+                      $str.=  ' <div class="col-md-3 text-center" style="padding-top:10px;"> ';
+                      $str.=   ' <a href="#" class="hf">回复</a> ';
+                      $str.=  '</div>';
+                      $str.= '</div> '; 
+      }   
+      $this->ajaxReturn($str);
+    }
     //获取评论数据
-    private function getCommentData($id){
+    private function getCommentData($id,$num=2){
       $commentData = M()->table("comment c,user u")
                       ->field("c.id,c.uid,c.ofid,c.content,c.posttime,u.pickname,u.logo")
                       ->where("c.uid=u.id")
                       ->where(array('c.ofid'=>$id))->order("posttime desc")->select();
        $count = count($commentData);
        for($i=0;$i!=$count;$i++){
+          $childNum = M('comment2')->where(array("pid"=>$commentData[$i]['id']))->count('id'); //子评论数目
+          $commentData[$i]['childnum'] = $childNum;  //子评论数目加入数组
+          $commentData[$i]['childyu'] = $childNum-$num; //大于零前台显示
           $commentData[$i]['child'] = M()->table("comment2 c,user u")
                                           ->field("c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo")
                                           ->where("c.uid=u.id")
-                                          ->where(array("pid"=>$commentData[$i]['id']))
+                                          ->where(array("c.pid"=>$commentData[$i]['id']))
                                           ->order("posttime desc")
+                                          ->limit('0,'.$num)
                                           ->select();
-
-          $cou = count($commentData[$i]['child']);
+          if($childNum>$num){$cou=$num;}else{$cou=$childNum;}                                 
           for($j=0;$j!=$cou;$j++){
               $commentData[$i]['child'][$j]['touserpickname'] = M("user")->where(array('id'=>$commentData[$i]['child'][$j]['touid']))->getField('pickname');
           } 
        }       
+       // dump($commentData);
        return $commentData;        
      }
     //点赞
@@ -144,7 +188,9 @@ class CodeController extends Controller
      public function comment2(){
         $data = I('post.');
         //测试用user
-        $data['uid'] = '15';
+        $arr = array('15','16','17');
+        $num = rand(0,2);
+        $data['uid'] = $arr[$num];
         $data['posttime']=time();
         $comment = D('comment2');
 

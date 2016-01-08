@@ -1,0 +1,29 @@
+<div id="top" style="width:100px;height:50px;position:fixed;bottom:10px;display: none;">
+	<button class="btn btn-default"><i class="fa fa-space-shuttle fa-2x fa-rotate-270"></i></button>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		var width = $(window).width();
+		console.log(width);
+		var kyWidth = $('.container').width();
+		width = parseInt(width-kyWidth)/2;
+		$('#top').css({"right":width+"px"});  //控制距离
+
+		$(window).scroll(function(event) {
+			 var height = window.scrollY;
+			 if(height>=400){
+			 	$('#top').css({"display":"block"});
+			 }else{
+			 	$('#top').css({"display":"none"});
+			 }
+		});
+		//点击事件
+		$('#top').click(function(event) {
+			window.scrollTo(0,0);
+
+			/*TODO 动画效果*/
+		});
+
+	});
+</script>
