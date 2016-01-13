@@ -35,25 +35,25 @@
             <div class="container" style="background-color:white;">
                <div class="navbar-header" id="left">
                     <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
-                    <a class="navbar-brand active" href="/myblog/index.php/Home/Index" style="padding-left: 2rem;">DaWenxi
+                    <a class="navbar-brand active" href="/myblog" style="padding-left: 2rem;">DaWenxi
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
                    <img src="/myblog/Public/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
                     <ul class="nav navbar-nav navbar-right" id="right">
-                        <li><a href="/myblog/index.php/Home/Code/index?id=1">编码<span class="sr-only"></span></a></li>
-                        <li><a href="/myblog/index.php/Home/Code/index?id=2">娱乐</a></li>
+                        <li><a href="<?php echo U(PATH.'/1');?>">编码<span class="sr-only"></span></a></li>
+                        <li><a href="<?php echo U(PATH.'/2');?>">娱乐</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/myblog/index.php/Home/Code/index?id=3">魔兽世界</a></li>
+                                <li><a href="<?php echo U(PATH.'/3');?>">魔兽世界</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/myblog/index.php/Home/Code/index?id=4">暗黑3</a></li>
+                                <li><a href="<?php echo U(PATH.'/4');?>">暗黑3</a></li>
                             </ul>
                         </li>
-                        <form class="navbar-form navbar-left" role="search" action="/myblog/index.php/Home/Code/search" method='post'>
+                        <form class="navbar-form navbar-left" role="search" action="<?php echo U(PATH.'/search');?>" method='get'>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_POST['search']); ?>>
+                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_GET['search']); ?>>
                         </div>
                         <button type="submit" class="btn btn-default">搜索</button>
                     </form>
@@ -109,11 +109,11 @@
 
 				<ol class="breadcrumb">
 					<li>
-						<a href="/myblog/index.php/Home/Index/index">首页</a>
+						<a href="/myblog">首页</a>
 					</li>
 					<?php $cou = count($mianbao); for($i=$cou-1;$i>=0;$i--){ echo "
 						<li>
-							<a href='/myblog/index.php/Home/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
+							<a href='".U(PATH.'/'.$mianbao[$i]['id'])."'>".$mianbao[$i]['cname']."</a>
 						</li>
 						"; } ?>
 					<li><?php echo (subtext($article["title"],30)); ?></li>
@@ -122,9 +122,10 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<h2><?php echo ($article["title"]); ?></h2>
+						<hr class="hr-bott">
 						<div>
-							<?php echo (date('Y-m-d H:i:s',$article["posttime"])); ?> by
-							<a href="#"><?php echo ($article["author"]); ?></a>
+							<span class="glyphicon glyphicon-calendar"></span>
+							<?php echo (date('Y-m-d H:i',$article["posttime"])); ?>
 							<ul class="list-inline pull-right nano">
 								<li> <i class="fa fa-weibo fa-1x"></i>
 								</li>
@@ -141,6 +142,7 @@
 
 							</ul>
 						</div>
+						<hr class="hr-bott">
 						<?php echo (htmlspecialchars_decode($article["content"])); ?>
 						<div class="row">
 							<div class="col-md-12 text-center">
@@ -165,11 +167,11 @@
 								<ul class="pager">
 									<?php if(!empty($article['fid'])){ ?>
 									<li>
-										<a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($article["fid"]); ?>">上</a>
+										<a href="<?php echo U(CONTENT.'/'.$article['fid']);?>">上</a>
 									</li>
 									<?php } if(!empty($article['nid'])){ ?>
 									<li>
-										<a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($article["nid"]); ?>">下</a>
+										<a href="<?php echo U(CONTENT.'/'.$article['nid']);?>">下</a>
 									</li>
 									<?php } ?>
 								</ul>
@@ -187,7 +189,7 @@
 								评论列表
 								<small>comment list</small>
 							</h3>
-							<hr>
+							<hr class="hr-bott">
 							<?php if(is_array($comment)): $i = 0; $__LIST__ = $comment;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comment): $mod = ($i % 2 );++$i;?><div class="row commentList">
 									<div class="col-md-2 text-center center-block">
 										<input type="hidden" name='uid' value=<?php echo ($comment["uid"]); ?>>
@@ -203,7 +205,7 @@
 									</div>
 									<div class="col-md-10 col-md-offset-2">
 										<?php if(is_array($comment["child"])): $i = 0; $__LIST__ = $comment["child"];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$comment2): $mod = ($i % 2 );++$i;?><!--子评论-->
-											<hr>
+											<hr class="hr-bott">
 											<div class="row">
 												<div class="col-md-2 text-center center-block">
 													<input type="hidden" name='uid' value=<?php echo ($comment2["uid"]); ?>>
@@ -247,14 +249,14 @@
 									</div>
 								</div>
 
-								<hr><?php endforeach; endif; else: echo "" ;endif; ?>
+								<hr class="hr-bott"><?php endforeach; endif; else: echo "" ;endif; ?>
 								<script>
 									//ajax 加载
 									$(document).ready(function() {
 										$('.load').click(function(e){
 											var load = $(this);
 											var id = load.parents('.commentList').next().find("input[name='id']").val();
-											$.post('/myblog/index.php/Home/Code/ajaxComment2', {pid:id}, function(data) {
+											$.post('/myblog/Home/Code/ajaxComment2', {pid:id}, function(data) {
 													load.parents(".col-md-offset-2").html(data);
 											},'json');
 
@@ -277,7 +279,7 @@
 											var pid =  $(this).siblings("input[name='id']").val();
 											var touid  = $(this).siblings("input[name='uuid']").val();
 
-											$.post('/myblog/index.php/Home/Code/comment2',
+											$.post('/myblog/Home/Code/comment2',
 											 {
 											 	content:content,
 											 	uid:uid,
@@ -337,9 +339,11 @@
 			<div>
 				<h4>推荐</h4>
 				<ol class="list-unstyled">
-					<?php if(is_array($recommend)): $i = 0; $__LIST__ = $recommend;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="">
+					<?php if(is_array($recommend)): $i = 0; $__LIST__ = $recommend;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i; if($vo['id']!=$article['id']){ ?>
+						<a href="<?php echo U(CONTENT.'/'.$vo['id']);?>">
 							<li><?php echo (subtext($vo["title"],20)); ?></li>
-						</a><?php endforeach; endif; else: echo "" ;endif; ?>
+						</a>
+						<?php } endforeach; endif; else: echo "" ;endif; ?>
 				</ol>
 			</div>
 			<div>
@@ -347,13 +351,7 @@
 				<h4>其他</h4>
 				<ol class="list-unstyled">
 					<li>
-						<a href="#">GitHub</a>
-					</li>
-					<li>
-						<a href="#">Twitter</a>
-					</li>
-					<li>
-						<a href="#">Facebook</a>
+						<a href="http://weibo.com/p/1005052728049505?is_all=1" target="_balnk">微博</a>
 					</li>
 				</ol>
 			</div>
@@ -455,7 +453,7 @@
 		var num = $('#rise').text();
 		$('#rise').click(function(){
 			var id = <?php echo ($_GET['id']); ?>;
-			$.post('/myblog/index.php/Home/Code/doRise',
+			$.post('/myblog/Home/Code/doRise',
 			 {
 			 	id:id
 			 },
@@ -507,7 +505,7 @@
 			}
 			var ofid = "<?php echo ($_GET['id']); ?>";
 			var uid = "<?php echo (session('id')); ?>";
-			$.post('/myblog/index.php/Home/Code/comment',
+			$.post('/myblog/Home/Code/comment',
 				 {
 				 	content:content,
 				 	ofid:ofid,

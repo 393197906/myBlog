@@ -4,7 +4,7 @@ use Think\Controller;
 class IndexController extends Controller
 {
     public function index() {
-        $data = M('article')->select();
+        $data = M('article')->order("posttime desc")->select();
         $code = $this->getNodeList("编码");
         $fun = $this->getNodeList("娱乐");
         $bx = M('node')->where("cname = '魔兽' or cname = '暗黑破坏神'")->select();

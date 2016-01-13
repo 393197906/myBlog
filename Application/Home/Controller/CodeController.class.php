@@ -2,7 +2,7 @@
 namespace Home\Controller;
 use Think\Controller;
 class CodeController extends Controller
-{
+{   
     public function index() {
         $id = I('get.id');
         $article = D('article');
@@ -15,21 +15,26 @@ class CodeController extends Controller
        	}
 
        	if(empty($nodeList)){  
-       		$data = $article->where(array('ofid'=>$id))->select();
+          $count = $article->where(array('ofid'=>$id))->count();
+          $page = PAGE($count,PAGENUM); //实例化分页类
+       		$data = $article->where(array('ofid'=>$id))->order("posttime desc")->limit($page->firstRow.','.$page->listRows)->select();
        		$pid = $node->where(array("id"=>$id))->getField('pid');
        		$nodeList = $node->field("id,cname")->where(array('pid'=>$pid))->select(); //取得同胞节点数据
-          $recommendData = $article->field('id,title,content')->where(array('ofid'=>$id,'recommend'=>'1'))->select(); //推荐数据
-       	}else{   
-       		$data = $article->where(array('ofid'=>array('in',$arr)))->select();
-          $recommendData = $article->field('id,title,content')->where(array('ofid'=>array('in',$arr),'recommend'=>'1'))->select(); //推荐数据
+          $recommendData = $article->field('id,title,content')->where(array('ofid'=>$id,'recommend'=>'1'))->limit('0,5')->select(); //推荐数据
+       	}else{  
+          $count = $article->where(array('ofid'=>array('in',$arr)))->count();
+          $page = PAGE($count,PAGENUM); //实例化分页类
+       		$data = $article->where(array('ofid'=>array('in',$arr)))->order("posttime desc")->limit($page->firstRow.','.$page->listRows)->select();
+          $recommendData = $article->field('id,title,content')->where(array('ofid'=>array('in',$arr),'recommend'=>'1'))->limit('0,5')->select(); //推荐数据
        	}
 
        	$mianbao = array();
        	$this->mianbao($id,$mianbao);  
-        $this->assign('mianbao',$mianbao);
-        $this->assign("nodeList",$nodeList);
-        $this->assign("articleList",$data);
-        $this->assign('recommend',$recommendData);
+        $this->assign('mianbao',$mianbao); //面包屑的导航
+        $this->assign("nodeList",$nodeList); //标签
+        $this->assign("articleList",$data);  //内容
+        $this->assign('recommend',$recommendData); //推荐数据
+        $this->assign('page',$page->show());
         $this->display();
     }
     //文章页
@@ -151,16 +156,19 @@ class CodeController extends Controller
 
     //搜索页
     public function search(){
-       $search = I('post.search');
+       $search = I('get.search');
        $article = M('article');
        $where['title']=array('like','%'.$search.'%');
-       $data = $article->where($where)->select(); //搜索结果
+       $count = $article->where($where)->count();
+       $page = PAGE($count,PAGENUM,PATH.'/search');
+       $data = $article->where($where)->order("posttime desc")->limit($page->firstRow.','.$page->listRows)->select(); //搜索结果
        $empty = "<h1 class='text-center' style='color:#d9534f'>搜索结果为空</h1>";
        //推荐数据
-       $recommendData = $article->where(array('recommend'=>'1'))->limit('0,5')->select();
+       $recommendData = $article->where(array('recommend'=>'1'))->limit('0,5')->order("posttime desc")->select();
        $this->assign('recommend',$recommendData);
        $this->assign('empty',$empty);
        $this->assign('searchList',$data);
+       $this->assign('page',$page->show());
        $this->display();
 
     }

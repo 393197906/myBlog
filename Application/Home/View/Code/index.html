@@ -12,14 +12,14 @@
             <div class="col-md-9">
                 <ol class="breadcrumb">
                     <li>
-                        <a href="__MODULE__/Index/index">首页</a>
+                        <a href="__APP__">首页</a>
                     </li>
                     <php>
                         $cou = count($mianbao);
                             for($i=$cou-1;$i>0;$i--){
-                                echo "
+                        echo "
                         <li>
-                            <a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
+                            <a href='".U(PATH.'/'.$mianbao[$i]['id'])."'>".$mianbao[$i]['cname']."</a>
                         </li>
                         ";
                             }
@@ -31,7 +31,7 @@
                 <div class="panel panel-default">
                     <div class="panel-body labelh ">
                         <volist id="vo" name="nodeList">
-                            <a href="__MODULE__/Code/index?id={$vo.id}" style="text-decoration:none;">
+                            <a href="{:U(PATH.'/'.$vo['id'])}" style="text-decoration:none;">
                                 <span class="label label-default" id="node{$vo.id}">{$vo.cname}</span>
                             </a>
                             &nbsp;
@@ -43,30 +43,31 @@
                         <volist id="vo" name="articleList">
                             <div class="row" style="padding-top:20px;">
                                 <div class="col-md-9">
-                                    <h2 style="padding-bottom: 10px;margin-top:10px;">{$vo.title|strip_tags|subtext=23}</h2>
+                                <a href="{:U(CONTENT.'/'.$vo['id'])}"><h3 style="padding-bottom: 3px;margin-top:3px;">{$vo.title|strip_tags|subtext=23}</h3></a>
 
                                     <p style="padding-bottom: 10px;">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=120}</p>
                                     <p class="p-bottom">
-                                        <span >
-                                            <span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span>
-                                            <span class="badge" style="background-color: #777">{$vo.rise}</span>
-                                        </span>
+                                        <span class="glyphicon glyphicon-tag"></span>
+                                        {$vo.label}
+                                            <span class="glyphicon glyphicon-thumbs-up" style="margin-left: 20px;"></span>
+                                            {$vo.rise}
                                         <span style="margin-left: 20px;">
-                                            <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span>
-                                            <span class="badge" style="background-color: #777">{$vo.view}</span>
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            {$vo.view}
                                         </span>
-                                        <span style="margin-left: 20px;">
-                                            <span class="label label-default">{$vo.label}</span>
+                                         <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            {$vo.posttime|date="Y/m/d",###}
                                         </span>
-                                        <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right;text-decoration:none;">
+                                        
+                                        <a href="{:U(CONTENT.'/'.$vo['id'])}" style="float:right;text-decoration:none;">
                                             阅读全文
-                                            
                                         </a>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
                                     <php>if(empty($vo['logo'])){</php>
-                                     <img src="__PUBLIC__/images/logo.jpg" class="img-responsive ">
+                                     <img src="__PUBLIC__/images/shanzhijing.png" class="img-responsive ">
                                     <php>}else{</php>
                                     <img src="{$vo.logo}" class="img-responsive ">
                                      <php>}</php>
@@ -74,13 +75,14 @@
                             </div>
 
                             <hr class="hr-bottom"></volist>
+                            {$page}
                     </div>
                 </div>
             </div>
             <div class="col-md-3">
                 <div class="list-group">
                     <volist id="vo" name="recommend">
-                        <a href="__MODULE__/Code/detail?id={$vo.id}" class="list-group-item">
+                        <a href="{:U(CONTENT.'/'.$vo['id'])}" class="list-group-item">
                             <h4 class="list-group-item-heading">{$vo.title|subtext=15}</h4>
                             <p class="list-group-item-text">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=20}</p>
 

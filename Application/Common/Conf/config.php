@@ -12,7 +12,18 @@ return array(
 				'DB_CHARSET'            =>  'utf8',      // 数据库编码默认采用utf8
 
 				// 显示页面Trace信息
-'SHOW_PAGE_TRACE' =>true, 
+				'SHOW_PAGE_TRACE' =>true, 
+				'MODULE_ALLOW_LIST'    =>    array('Home','Admin'),
+				'DEFAULT_MODULE'       =>    'Home',  // 默认模块
+				'URL_MODEL'             =>  2,  
+				'URL_ROUTER_ON'   => true,  //路由规则开启
+				'URL_ROUTE_RULES'=>array(  //路由规则
+    						'/^'.PATH.'\/(\d+)\/?([a-zA-Z]+)?\/?(\d+)?$/' => 'Home/Code/index?id=:1&m=:2&p=:3',  //列表页
+    						// PATH.'/:id\d/:p\d' => 'Home/Code/index',
+    						CONTENT.'/:id\d' => 'Home/Code/detail', //文章页
+    						'/^'.PATH.'\/search\/?(\d+)?$/'=> 'Home/Code/search?p=:1', //搜索页
+
+    			)
 				
 				
 );

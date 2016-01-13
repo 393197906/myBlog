@@ -1,0 +1,31 @@
+[ 2016-01-11T09:06:26+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-11T09:06:31+08:00 ] ::1 /myblog/index.php/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+

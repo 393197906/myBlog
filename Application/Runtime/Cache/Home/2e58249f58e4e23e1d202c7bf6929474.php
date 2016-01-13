@@ -21,25 +21,25 @@
             <div class="container" style="background-color:white;">
                <div class="navbar-header" id="left">
                     <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
-                    <a class="navbar-brand active" href="/myblog/index.php/Home/Index" style="padding-left: 2rem;">DaWenxi
+                    <a class="navbar-brand active" href="/myblog" style="padding-left: 2rem;">DaWenxi
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
                    <img src="/myblog/Public/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
                     <ul class="nav navbar-nav navbar-right" id="right">
-                        <li><a href="/myblog/index.php/Home/Code/index?id=1">编码<span class="sr-only"></span></a></li>
-                        <li><a href="/myblog/index.php/Home/Code/index?id=2">娱乐</a></li>
+                        <li><a href="<?php echo U(PATH.'/1');?>">编码<span class="sr-only"></span></a></li>
+                        <li><a href="<?php echo U(PATH.'/2');?>">娱乐</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/myblog/index.php/Home/Code/index?id=3">魔兽世界</a></li>
+                                <li><a href="<?php echo U(PATH.'/3');?>">魔兽世界</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/myblog/index.php/Home/Code/index?id=4">暗黑3</a></li>
+                                <li><a href="<?php echo U(PATH.'/4');?>">暗黑3</a></li>
                             </ul>
                         </li>
-                        <form class="navbar-form navbar-left" role="search" action="/myblog/index.php/Home/Code/search" method='post'>
+                        <form class="navbar-form navbar-left" role="search" action="<?php echo U(PATH.'/search');?>" method='get'>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_POST['search']); ?>>
+                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_GET['search']); ?>>
                         </div>
                         <button type="submit" class="btn btn-default">搜索</button>
                     </form>
@@ -94,7 +94,7 @@
             <div class="col-md-9">
                 <ol class="breadcrumb">
                     <li>
-                        <a href="/myblog/index.php/Home/Index/index">首页</a>
+                        <a href="/myblog">首页</a>
                     </li>
                     <li>搜索结果</li>
                 </ol>
@@ -105,22 +105,26 @@
                                     <?php $str = $_POST['search']; $restr = '
                                         <span style="color:#d9534f">'.$str.'</span>
                                         '; $vo['title']=str_replace($str,$restr,$vo['title']); ?>
-                                    <h2 style="padding-bottom: 10px;margin-top:10px;"><?php echo ($vo["title"]); ?></h2>
+                                    <a href="<?php echo U(CONTENT.'/'.$vo['id']);?>"><h3 style="padding-bottom: 3px;margin-top:3px;"><?php echo ($vo["title"]); ?></h3></a>
 
                                     <p style="padding-bottom: 10px;"><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),120)); ?></p>
                                     <p class="p-bottom">
-                                        <span >
-                                            <span class="glyphicon glyphicon-thumbs-up" style="top:3px;"></span>
-                                            <span class="badge" style="background-color: #777"><?php echo ($vo["rise"]); ?></span>
-                                        </span>
+                                        <span class="glyphicon glyphicon-tag"></span>
+                                        <?php echo ($vo["label"]); ?>
+                                            <span class="glyphicon glyphicon-thumbs-up" style="margin-left: 20px;"></span>
+                                            <?php echo ($vo["rise"]); ?>
                                         <span style="margin-left: 20px;">
-                                            <span class="glyphicon glyphicon-eye-open" style="top:3px;"></span>
-                                            <span class="badge" style="background-color: #777"><?php echo ($vo["view"]); ?></span>
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            <?php echo ($vo["view"]); ?>
                                         </span>
-                                        <span style="margin-left: 20px;">
-                                            <span class="label label-default"><?php echo ($vo["label"]); ?></span>
+                                         <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            <?php echo (date("Y/m/d",$vo["posttime"])); ?>
                                         </span>
-                                        <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" style="float:right;text-decoration:none;">阅读全文</a>
+                                        
+                                        <a href="<?php echo U(CONTENT.'/'.$vo['id']);?>" style="float:right;text-decoration:none;">
+                                            阅读全文
+                                        </a>
                                     </p>
                                 </div>
                                 <div class="col-md-3">
@@ -133,13 +137,14 @@
                             </div>
 
                             <hr class="hr-bottom"><?php endforeach; endif; else: echo "$empty" ;endif; ?>
+                            <?php echo ($page); ?>
                     </div>
                 </div>
             </div>
             <!-- 推荐文章 -->
             <div class="col-md-3">
                 <div class="list-group">
-                    <?php if(is_array($recommend)): $i = 0; $__LIST__ = $recommend;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" class="list-group-item">
+                    <?php if(is_array($recommend)): $i = 0; $__LIST__ = $recommend;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="<?php echo U(CONTENT.'/'.$vo['id']);?>" class="list-group-item">
                             <h4 class="list-group-item-heading"><?php echo (subtext($vo["title"],15)); ?></h4>
                             <p class="list-group-item-text"><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),20)); ?></p>
 

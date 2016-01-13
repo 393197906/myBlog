@@ -81,9 +81,9 @@ function utf8_str($str)
 }
 
 //分页函数 (bootstrap)
-function  PAGE($count, $pageNum = 12)
+function  PAGE($count, $pageNum,$qianzhui=PATH)
 {
-    $Page = new \Think\Page($count, $pageNum);// 实例化分页类 传入总记录数和每页显示的记录数
+    $Page = new \Think\Page($count, $pageNum,$qianzhui);// 实例化分页类 传入总记录数和每页显示的记录数
 
     $Page->setConfig('prev', '上一页');
     $Page->setConfig('next', '下一页');

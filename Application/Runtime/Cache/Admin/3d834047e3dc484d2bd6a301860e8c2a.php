@@ -62,7 +62,7 @@
 									<?php }else{ ?>
 									<button class="button warning recommend" id='<?php echo ($vo["id"]); ?>'>推荐</button>
 									<?php } ?>
-									<a href="/myblog/index.php/Home/Service/article?id=<?php echo ($vo["id"]); ?>" target="_blank">
+									<a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" target="_blank">
 										<button class="button primary btn">查看</button>
 									</a>
 									<div class="dropdown-button">

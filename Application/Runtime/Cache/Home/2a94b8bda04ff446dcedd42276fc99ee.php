@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta property="wb:webmaster" content="5d5adf033883cbcc" />
+    <title>DaWenXi</title>
     <link rel="stylesheet" href="/myblog/Public/css/bootstrap.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/font-awesome.min.css">
@@ -21,25 +22,25 @@
             <div class="container" style="background-color:white;">
                <div class="navbar-header" id="left">
                     <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
-                    <a class="navbar-brand active" href="/myblog/index.php/Home/Index" style="padding-left: 2rem;">DaWenxi
+                    <a class="navbar-brand active" href="/myblog" style="padding-left: 2rem;">DaWenxi
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
                    <img src="/myblog/Public/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
                     <ul class="nav navbar-nav navbar-right" id="right">
-                        <li><a href="/myblog/index.php/Home/Code/index?id=1">编码<span class="sr-only"></span></a></li>
-                        <li><a href="/myblog/index.php/Home/Code/index?id=2">娱乐</a></li>
+                        <li><a href="<?php echo U(PATH.'/1');?>">编码<span class="sr-only"></span></a></li>
+                        <li><a href="<?php echo U(PATH.'/2');?>">娱乐</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="/myblog/index.php/Home/Code/index?id=3">魔兽世界</a></li>
+                                <li><a href="<?php echo U(PATH.'/3');?>">魔兽世界</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="/myblog/index.php/Home/Code/index?id=4">暗黑3</a></li>
+                                <li><a href="<?php echo U(PATH.'/4');?>">暗黑3</a></li>
                             </ul>
                         </li>
-                        <form class="navbar-form navbar-left" role="search" action="/myblog/index.php/Home/Code/search" method='post'>
+                        <form class="navbar-form navbar-left" role="search" action="<?php echo U(PATH.'/search');?>" method='get'>
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_POST['search']); ?>>
+                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_GET['search']); ?>>
                         </div>
                         <button type="submit" class="btn btn-default">搜索</button>
                     </form>
@@ -96,11 +97,10 @@
                     <div class="bg-logo" style="background-image: url(/myblog/Public/images/600.jpg);"></div>
                     <div class="caption text-center">
                         <img src="/myblog/Public/images/shanzhi.gif"  class="logo">
-                        <h3>达文西</h3>
-                        <p>...</p>
+                        <h3>达文皙</h3>
+                        <p>不以彼岸为目的的航行</p>
                         <p>
-                           
-                            <a href="#" class="btn btn-default" role="button">Button</a>
+                            <a href="#" class="btn btn-danger" role="button">Focus</a>
                         </p>
                     </div>
                 </div>
@@ -111,32 +111,51 @@
                             微博
                             <small>WeiBo</small>
                         </h4>
-                        <img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img">
+                        <img src="/myblog/Public/images/weibo.png" alt="二维码" class="panel-img" style="width:85%;height:85%;padding-top:10px;padding-bottom: 15px;">
                         <h4> <i class="fa fa-weixin fa-1x"></i>
                             微信
                             <small>WeiXin</small>
                         </h4>
-                        <img src="/myblog/Public/images/er.jpg" alt="二维码" class="panel-img"></div>
+                        <img src="/myblog/Public/images/weixin.jpg" alt="二维码" class="panel-img"></div>
                 </div>
             </div>
             <div class="col-md-6"  style="padding-left: 0;">
-                <div class="panel panel-default">
-                    <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h1>
-                                        <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>"><?php echo (subtext($vo["title"],30)); ?></a>
-                                    </h1>
-                                    <p><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),80)); ?></p>
-                                    <span class="label label-default"><?php echo ($vo["label"]); ?></span>
+                 <div class="panel panel-default">
+                    <div class="panel-body" style="padding-top:0;">
+                        <?php if(is_array($articleList)): $i = 0; $__LIST__ = $articleList;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="row" style="padding-top:20px;">
+                                <div class="col-md-9">
+                                    <a href="/myblog/Home/Code/detail?id=<?php echo ($vo["id"]); ?>"><h3 style="padding-bottom: 3px;margin-top:3px;"><?php echo (subtext(strip_tags($vo["title"]),23)); ?></h3></a>
+                                    <p style="padding-bottom: 10px;"><?php echo (subtext(strip_tags(htmlspecialchars_decode($vo["content"])),120)); ?></p>
+                                    <p class="p-bottom">
+                                        <span class="glyphicon glyphicon-tag"></span>
+                                        <?php echo ($vo["label"]); ?>
+                                            <span class="glyphicon glyphicon-thumbs-up" style="margin-left: 20px;"></span>
+                                            <?php echo ($vo["rise"]); ?>
+                                        <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            <?php echo ($vo["view"]); ?>
+                                        </span>
+                                        <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            <?php echo (date("Y/m/d",$vo["posttime"])); ?>
+                                        </span>
+                                        
+                                        <a href="/myblog/Home/Code/detail?id=<?php echo ($vo["id"]); ?>" style="float:right;text-decoration:none;">
+                                            阅读全文
+                                        </a>
+                                    </p>
                                 </div>
-                                <div class="col-md-4" style="padding-top:30px;">
-                                    <a href="/myblog/index.php/Home/Code/detail?id=<?php echo ($vo["id"]); ?>">
-                                        <img src="<?php echo ($vo["logo"]); ?>" class="img-responsive "></a>
+                                <div class="col-md-3">
+                                    <?php if(empty($vo['logo'])){ ?>
+                                     <img src="/myblog/Public/images/shanzhijing.png" class="img-responsive ">
+                                    <?php }else{ ?>
+                                    <img src="<?php echo ($vo["logo"]); ?>" class="img-responsive ">
+                                     <?php } ?>
                                 </div>
                             </div>
 
-                            <hr class="bg-primary"></div><?php endforeach; endif; else: echo "" ;endif; ?>
+                            <hr class="hr-bottom"><?php endforeach; endif; else: echo "" ;endif; ?>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 pull"  style="padding-left: 0;">
@@ -146,7 +165,7 @@
                         编码
                     </div>
                     <div class="panel-body labelh " style="line-height:30px;">
-                        <?php if(is_array($code)): $i = 0; $__LIST__ = $code;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($code)): $i = 0; $__LIST__ = $code;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </div>
                 </div>
@@ -156,7 +175,7 @@
                         娱乐
                     </div>
                     <div class="panel-body labelh " style="line-height:30px;">
-                        <?php if(is_array($fun)): $i = 0; $__LIST__ = $fun;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($fun)): $i = 0; $__LIST__ = $fun;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </div>
                 </div>
@@ -166,7 +185,7 @@
                         暴雪
                     </div>
                     <div class="panel-body labelh " style="line-height:30px;">
-                        <?php if(is_array($bx)): $i = 0; $__LIST__ = $bx;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/index.php/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
+                        <?php if(is_array($bx)): $i = 0; $__LIST__ = $bx;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><a href="/myblog/Home/Code/index?id=<?php echo ($vo["id"]); ?>"><span class="label label-default"><?php echo ($vo["cname"]); ?></span></a>&nbsp;<?php endforeach; endif; else: echo "" ;endif; ?>
 
                     </div>
                 </div>

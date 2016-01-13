@@ -19,6 +19,7 @@ class Page{
     public $rollPage   = 11;// 分页栏每页显示的页数
 	public $lastSuffix = true; // 最后一页是否显示总页数
 
+    private $qianzhui;   //路由前缀
     private $p       = 'p'; //分页参数名
     private $url     = ''; //当前链接URL
     private $nowPage = 1;
@@ -39,7 +40,7 @@ class Page{
      * @param array $listRows  每页显示记录数
      * @param array $parameter  分页跳转的参数
      */
-    public function __construct($totalRows, $listRows=20, $parameter = array()) {
+    public function __construct($totalRows, $listRows=20, $qianzhui = PATH,$parameter = array()) {
         C('VAR_PAGE') && $this->p = C('VAR_PAGE'); //设置分页参数名称
         /* 基础设置 */
         $this->totalRows  = $totalRows; //设置总记录数
@@ -48,6 +49,7 @@ class Page{
         $this->nowPage    = empty($_GET[$this->p]) ? 1 : intval($_GET[$this->p]);
         $this->nowPage    = $this->nowPage>0 ? $this->nowPage : 1;
         $this->firstRow   = $this->listRows * ($this->nowPage - 1);
+        $this->qianzhui = $qianzhui;
     }
 
     /**
@@ -69,7 +71,25 @@ class Page{
     private function url($page){
         return str_replace(urlencode('[PAGE]'), $page, $this->url);
     }
-
+    /**
+     * 谢利朋的个人函数（路由使用）
+     * @return string
+     */
+    private function U_xie($arr){
+            $str = $this->qianzhui;
+            if(!empty($arr['id'])){
+                $str.='/'.$arr['id'];
+            }
+            if(!empty($arr[$this->p])){
+                $str.='/'.urlencode($arr[$this->p]);
+            }
+            if(!empty($arr['search'])){
+                $str=U($str);
+                $str.='?search='.$arr['search'];
+                return $str;
+            }
+            return U($str);
+    }
     /**
      * 组装分页链接
      * @return string
@@ -79,8 +99,8 @@ class Page{
 
         /* 生成URL */
         $this->parameter[$this->p] = '[PAGE]';
-        $this->url = U(ACTION_NAME, $this->parameter);
-        /* 计算分页信息 */
+         // $this->url = U(ACTION_NAME, $this->parameter);  //原代码 不支持路由 
+        $this->url = $this->U_xie($this->parameter);
         $this->totalPages = ceil($this->totalRows / $this->listRows); //总页数
         if(!empty($this->totalPages) && $this->nowPage > $this->totalPages) {
             $this->nowPage = $this->totalPages;

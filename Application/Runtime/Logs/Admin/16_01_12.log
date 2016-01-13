@@ -1,0 +1,87 @@
+[ 2016-01-12T09:18:21+08:00 ] ::1 /myblog/index.php/Admin/Subject/doAddSubject
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `node` [ RunTime:0.0020s ]
+SQL: INSERT INTO `node` (`cname`,`ename`,`pid`) VALUES ('linux','Linux','1') [ RunTime:0.0000s ]
+
+[ 2016-01-12T09:18:41+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T09:18:43+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T09:24:43+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:07:43+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:07:45+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:09:41+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:29:43+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:29:52+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002930s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:30:18+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T10:30:33+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001953s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T16:58:53+08:00 ] ::1 /myblog/index.php/Admin/Code/list
+ERR: 非法操作:list
+
+[ 2016-01-12T16:59:03+08:00 ] ::1 /myblog/index.php/Admin/Content/getClass
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000976s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+ERR: 无法加载控制器:Content
+
+[ 2016-01-12T17:01:59+08:00 ] ::1 /myblog/index.php/Admin/Code/list
+ERR: 非法操作:list
+
+[ 2016-01-12T17:03:28+08:00 ] ::1 /myblog/index.php/Admin/Code/doRecommendArticle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000977s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0029s ]
+SQL: SELECT `recommend` FROM `article` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: UPDATE `article` SET `recommend`='1' WHERE `id` = 15 [ RunTime:0.0010s ]
+

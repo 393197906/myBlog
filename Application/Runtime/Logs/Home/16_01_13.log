@@ -1,0 +1,397 @@
+[ 2016-01-13T09:23:01+08:00 ] ::1 /myblog/index.php/Home/Code/detailid/15
+ERR: 非法操作:detailid
+
+[ 2016-01-13T09:58:58+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:11:51+08:00 ] ::1 /myblog/index.php/na/nana/1
+ERR: 无法加载控制器:Na
+
+[ 2016-01-13T10:11:57+08:00 ] ::1 /myblog/index.php/code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:12:23+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:19:01+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:19:03+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T10:19:05+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:14+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:15+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:15+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:15+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:15+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:15+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:17+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:17+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:17+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:18+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:18+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:18+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:42+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:42+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:43+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:43+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:51+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:52+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:52+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:52+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:19:52+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:24+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:25+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:25+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:25+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:25+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:31+08:00 ] ::1 /myblog/Code/code
+ERR: 非法操作:code
+
+[ 2016-01-13T10:23:39+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:23:41+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T10:23:43+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-13T10:23:53+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:26:57+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:14+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:15+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:15+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:32+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:42+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:42+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:27:42+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:28:16+08:00 ] ::1 /myblog/index.php/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:28:24+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:28:40+08:00 ] ::1 /myblog/index.php/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T10:28:46+08:00 ] ::1 /myblog/index.php/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T10:32:29+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:32:35+08:00 ] ::1 /myblog/Code/read/
+ERR: 非法操作:read
+
+[ 2016-01-13T10:32:41+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:39:06+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:39:35+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:40:58+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:40:59+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:40:59+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:09+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:09+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:09+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:09+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:10+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:10+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:10+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:41:10+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T10:43:12+08:00 ] ::1 /myblog/index.php/Home/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:04:50+08:00 ] ::1 /myblog/index.php/Home/Code/test
+ERR: 非法操作:test
+
+[ 2016-01-13T11:06:13+08:00 ] ::1 /myblog/index.php/Home/Code/id/1
+ERR: 非法操作:id
+
+[ 2016-01-13T11:07:59+08:00 ] ::1 /myblog/index.php/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T11:08:17+08:00 ] ::1 /myblog/index.php/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-13T11:13:12+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:13:25+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:13:26+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:13:26+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:13:26+08:00 ] ::1 /myblog/Code/1
+ERR: 非法操作:1
+
+[ 2016-01-13T11:17:56+08:00 ] ::1 /myblog/index.php/Code/c4ca4238a0b923820dcc509a6f75849b.html
+ERR: 非法操作:c4ca4238a0b923820dcc509a6f75849b
+
+[ 2016-01-13T11:18:14+08:00 ] ::1 /myblog/index.php/Code/c4ca4238a0b923820dcc509a6f75849b.html
+ERR: 非法操作:c4ca4238a0b923820dcc509a6f75849b
+
+[ 2016-01-13T11:18:16+08:00 ] ::1 /myblog/index.php/Code/c4ca4238a0b923820dcc509a6f75849b.html
+ERR: 非法操作:c4ca4238a0b923820dcc509a6f75849b
+
+[ 2016-01-13T11:23:51+08:00 ] ::1 /myblog/index.php/haha/1.html
+ERR: 无法加载控制器:Haha
+
+[ 2016-01-13T11:25:10+08:00 ] ::1 /myblog/index.php/haha/c4ca4238a0b923820dcc509a6f75849b.html
+ERR: 无法加载控制器:Haha
+
+[ 2016-01-13T11:26:29+08:00 ] ::1 /myblog/index.php/haha/c4ca4238a0b923820dcc509a6f75849b.html
+ERR: 无法加载控制器:Haha
+
+[ 2016-01-13T11:26:34+08:00 ] ::1 /myblog/index.php/Nana
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T11:26:37+08:00 ] ::1 /myblog/index.php//1
+ERR: 无法加载控制器:1
+
+[ 2016-01-13T11:47:24+08:00 ] ::1 /myblog/Nana/Arrayid.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T11:47:39+08:00 ] ::1 /myblog/Nana/Arrayid.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T11:47:42+08:00 ] ::1 /myblog/Nana/Arrayid.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T13:45:55+08:00 ] ::1 /myblog/Nana/%3C?php%20echo%20U(PATH.
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T13:48:22+08:00 ] ::1 /myblog/Nana/%3C?php%20echo%20U(PATH.
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T13:48:27+08:00 ] ::1 /myblog/Code/Nana.html
+ERR: 非法操作:Nana
+
+[ 2016-01-13T13:48:57+08:00 ] ::1 /myblog/Code/Nana.html
+ERR: 非法操作:Nana
+
+[ 2016-01-13T13:53:30+08:00 ] ::1 /myblog/Nana/Nana/1
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T13:53:47+08:00 ] ::1 /myblog/Nana/Nana/1
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T14:10:05+08:00 ] ::1 /myblog/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000976s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '3' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0029s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-13T14:10:08+08:00 ] ::1 /myblog/Home/Code/ajaxComment2
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `comment2` [ RunTime:0.0020s ]
+SQL: SELECT c.id,c.pid,c.uid,c.touid,c.content,c.posttime,u.pickname,u.logo FROM comment2 c,user u WHERE ( c.uid=u.id ) AND c.pid = '1' ORDER BY posttime desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.0020s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 17 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `pickname` FROM `user` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-13T15:14:21+08:00 ] ::1 /myblog/Code/xiaoming/id/1/m/Home/p/1.html
+ERR: 非法操作:xiaoming
+
+[ 2016-01-13T15:14:36+08:00 ] ::1 /myblog/Code/xiaoming/id/1/m/Home/p/1.html
+ERR: 非法操作:xiaoming
+
+[ 2016-01-13T15:14:51+08:00 ] ::1 /myblog/Code/xiaoming/id/1/m/Home/p/1.html
+ERR: 非法操作:xiaoming
+
+[ 2016-01-13T15:14:59+08:00 ] ::1 /myblog/Code/xiaoming/id/1/m/Home/p/1.html
+ERR: 非法操作:xiaoming
+
+[ 2016-01-13T15:15:04+08:00 ] ::1 /myblog/Code/xiaoming/id/1/m/Home/p/1.html
+ERR: 非法操作:xiaoming
+
+[ 2016-01-13T15:24:01+08:00 ] ::1 /myblog/Nana/6.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:24:14+08:00 ] ::1 /myblog/Nana/1/page/1
+ERR: 无法加载控制器:P
+
+[ 2016-01-13T15:25:52+08:00 ] ::1 /myblog/Nana/1/page/1
+ERR: 无法加载控制器:P
+
+[ 2016-01-13T15:25:57+08:00 ] ::1 /myblog/Nana/1/
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:26:09+08:00 ] ::1 /myblog/Nana/1/page/1
+ERR: 无法加载控制器:P
+
+[ 2016-01-13T15:33:40+08:00 ] ::1 /myblog/Nano/1/m/Home/p/1.html
+ERR: 无法加载控制器:Nano
+
+[ 2016-01-13T15:35:51+08:00 ] ::1 /myblog/Nana/1/m/Home/p/1.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:36:25+08:00 ] ::1 /myblog/Nana/1/Home/1.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:36:27+08:00 ] ::1 /myblog/Nana/1/m/Home/p/1.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:40:42+08:00 ] ::1 /myblog/Nana/1.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T15:40:48+08:00 ] ::1 /myblog/Nana/1.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:10:30+08:00 ] ::1 /myblog/Nana/search/2
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:10:42+08:00 ] ::1 /myblog/Nana/search/2
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:19:10+08:00 ] ::1 /myblog/Nana/search%E3%80%811
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:31:24+08:00 ] ::1 /myblog/Nana/Nana
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:31:29+08:00 ] ::1 /myblog/Nana/Nana
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:31:32+08:00 ] ::1 /myblog/Nana/Nana
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:31:36+08:00 ] ::1 /myblog/Nana/Nana
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T16:48:12+08:00 ] ::1 /myblog/1/2.html
+ERR: 无法加载控制器:1
+
+[ 2016-01-13T17:02:42+08:00 ] ::1 /myblog/Nana/search/2/search/centos.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T17:03:00+08:00 ] ::1 /myblog/Nana/search/2/search/centos.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T17:03:10+08:00 ] ::1 /myblog/Nana/search/2/search/centos.html
+ERR: 无法加载控制器:Nana
+
+[ 2016-01-13T17:08:20+08:00 ] ::1 /myblog/Nanaa/1.html
+ERR: 无法加载控制器:Nanaa
+

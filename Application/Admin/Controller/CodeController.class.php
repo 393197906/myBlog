@@ -79,7 +79,7 @@ class CodeController extends Controller
         if ($article->create($data)) {
             $status = $article->add($data);
             if ($status) {
-                $this->success("文章添加成功");
+                $this->success("文章添加成功","lists?id=".$data['ofid'],'1');
             } 
             else {
                 $this->error("文章添加失败");
@@ -144,12 +144,13 @@ class CodeController extends Controller
     public function doEditArticle()
     {
         $data = I('post.');
+        $data['ofid'] = M('node')->where(array('cname' => $data['label']))->getField('id');
         $id= I('get.id');
         $article = D('article');
         if($article->create($data)){
             $status  = $article->where(array('id'=>$id))->save($data);
             if($status){
-                $this->success("修改成功");
+                $this->success("修改成功","lists?id=".$data['ofid'],'1');
             }else{
                 $this->error("修改失败");
             }

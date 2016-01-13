@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta property="wb:webmaster" content="5d5adf033883cbcc" />
+    <title>DaWenXi</title>
     <include file="Blocks/import" />
 </head>
 <body>
@@ -14,11 +15,10 @@
                     <div class="bg-logo" style="background-image: url(__PUBLIC__/images/600.jpg);"></div>
                     <div class="caption text-center">
                         <img src="__PUBLIC__/images/shanzhi.gif"  class="logo">
-                        <h3>达文西</h3>
-                        <p>...</p>
+                        <h3>达文皙</h3>
+                        <p>不以彼岸为目的的航行</p>
                         <p>
-                           
-                            <a href="#" class="btn btn-default" role="button">Button</a>
+                            <a href="#" class="btn btn-danger" role="button">Focus</a>
                         </p>
                     </div>
                 </div>
@@ -29,34 +29,52 @@
                             微博
                             <small>WeiBo</small>
                         </h4>
-                        <img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img">
+                        <img src="__PUBLIC__/images/weibo.png" alt="二维码" class="panel-img" style="width:85%;height:85%;padding-top:10px;padding-bottom: 15px;">
                         <h4> <i class="fa fa-weixin fa-1x"></i>
                             微信
                             <small>WeiXin</small>
                         </h4>
-                        <img src="__PUBLIC__/images/er.jpg" alt="二维码" class="panel-img"></div>
+                        <img src="__PUBLIC__/images/weixin.jpg" alt="二维码" class="panel-img"></div>
                 </div>
             </div>
             <div class="col-md-6"  style="padding-left: 0;">
-                <div class="panel panel-default">
-                    <volist id="vo" name="articleList">
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <h1>
-                                        <a href="__MODULE__/Code/detail?id={$vo.id}">{$vo.title|subtext=30}</a>
-                                    </h1>
-                                    <p>{$vo.content|htmlspecialchars_decode|strip_tags|subtext=80}</p>
-                                    <span class="label label-default">{$vo.label}</span>
+                 <div class="panel panel-default">
+                    <div class="panel-body" style="padding-top:0;">
+                        <volist id="vo" name="articleList">
+                            <div class="row" style="padding-top:20px;">
+                                <div class="col-md-9">
+                                    <a href="__MODULE__/Code/detail?id={$vo.id}"><h3 style="padding-bottom: 3px;margin-top:3px;">{$vo.title|strip_tags|subtext=23}</h3></a>
+                                    <p style="padding-bottom: 10px;">{$vo.content|htmlspecialchars_decode|strip_tags|subtext=120}</p>
+                                    <p class="p-bottom">
+                                        <span class="glyphicon glyphicon-tag"></span>
+                                        {$vo.label}
+                                            <span class="glyphicon glyphicon-thumbs-up" style="margin-left: 20px;"></span>
+                                            {$vo.rise}
+                                        <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-eye-open"></span>
+                                            {$vo.view}
+                                        </span>
+                                        <span style="margin-left: 20px;">
+                                            <span class="glyphicon glyphicon-calendar"></span>
+                                            {$vo.posttime|date="Y/m/d",###}
+                                        </span>
+                                        
+                                        <a href="__MODULE__/Code/detail?id={$vo.id}" style="float:right;text-decoration:none;">
+                                            阅读全文
+                                        </a>
+                                    </p>
                                 </div>
-                                <div class="col-md-4" style="padding-top:30px;">
-                                    <a href="__MODULE__/Code/detail?id={$vo.id}">
-                                        <img src="{$vo.logo}" class="img-responsive "></a>
+                                <div class="col-md-3">
+                                    <php>if(empty($vo['logo'])){</php>
+                                     <img src="__PUBLIC__/images/shanzhijing.png" class="img-responsive ">
+                                    <php>}else{</php>
+                                    <img src="{$vo.logo}" class="img-responsive ">
+                                     <php>}</php>
                                 </div>
                             </div>
 
-                            <hr class="bg-primary"></div>
-                    </volist>
+                            <hr class="hr-bottom"></volist>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3 pull"  style="padding-left: 0;">

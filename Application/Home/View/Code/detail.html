@@ -27,14 +27,14 @@
 
 				<ol class="breadcrumb">
 					<li>
-						<a href="__MODULE__/Index/index">首页</a>
+						<a href="__APP__">首页</a>
 					</li>
 					<php>
 						$cou = count($mianbao);
                             for($i=$cou-1;$i>=0;$i--){
                                 echo "
 						<li>
-							<a href='__MODULE__/Code/index?id=".$mianbao[$i]['id']."'>".$mianbao[$i]['cname']."</a>
+							<a href='".U(PATH.'/'.$mianbao[$i]['id'])."'>".$mianbao[$i]['cname']."</a>
 						</li>
 						";
                             }
@@ -45,9 +45,10 @@
 				<div class="panel panel-default">
 					<div class="panel-body">
 						<h2>{$article.title}</h2>
+						<hr class="hr-bott">
 						<div>
-							{$article.posttime|date='Y-m-d H:i:s',###} by
-							<a href="#">{$article.author}</a>
+							<span class="glyphicon glyphicon-calendar"></span>
+							{$article.posttime|date='Y-m-d H:i',###}
 							<ul class="list-inline pull-right nano">
 								<li> <i class="fa fa-weibo fa-1x"></i>
 								</li>
@@ -64,6 +65,7 @@
 
 							</ul>
 						</div>
+						<hr class="hr-bott">
 						{$article.content|htmlspecialchars_decode}
 						<div class="row">
 							<div class="col-md-12 text-center">
@@ -88,14 +90,14 @@
 								<ul class="pager">
 									<php>if(!empty($article['fid'])){</php>
 									<li>
-										<a href="__MODULE__/Code/detail?id={$article.fid}">上</a>
+										<a href="{:U(CONTENT.'/'.$article['fid'])}">上</a>
 									</li>
 									<php>
 										}
                 if(!empty($article['nid'])){
 									</php>
 									<li>
-										<a href="__MODULE__/Code/detail?id={$article.nid}">下</a>
+										<a href="{:U(CONTENT.'/'.$article['nid'])}">下</a>
 									</li>
 									<php>}</php>
 								</ul>
@@ -113,7 +115,7 @@
 								评论列表
 								<small>comment list</small>
 							</h3>
-							<hr>
+							<hr class="hr-bott">
 							<volist id="comment" name="comment">
 								<div class="row commentList">
 									<div class="col-md-2 text-center center-block">
@@ -130,7 +132,7 @@
 									</div>
 									<div class="col-md-10 col-md-offset-2">
 										<volist id="comment2" name="comment.child">  <!--子评论-->
-											<hr>
+											<hr class="hr-bott">
 											<div class="row">
 												<div class="col-md-2 text-center center-block">
 													<input type="hidden" name='uid' value={$comment2.uid}>
@@ -175,7 +177,7 @@
 									</div>
 								</div>
 
-								<hr></volist>
+								<hr class="hr-bott"></volist>
 								<script>
 									//ajax 加载
 									$(document).ready(function() {
@@ -266,9 +268,11 @@
 				<h4>推荐</h4>
 				<ol class="list-unstyled">
 					<volist id="vo" name="recommend">
-						<a href="">
+						<php>if($vo['id']!=$article['id']){</php>
+						<a href="{:U(CONTENT.'/'.$vo['id'])}">
 							<li>{$vo.title|subtext=20}</li>
 						</a>
+						<php>}</php>
 					</volist>
 				</ol>
 			</div>
@@ -277,13 +281,7 @@
 				<h4>其他</h4>
 				<ol class="list-unstyled">
 					<li>
-						<a href="#">GitHub</a>
-					</li>
-					<li>
-						<a href="#">Twitter</a>
-					</li>
-					<li>
-						<a href="#">Facebook</a>
+						<a href="http://weibo.com/p/1005052728049505?is_all=1" target="_balnk">微博</a>
 					</li>
 				</ol>
 			</div>

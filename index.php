@@ -18,7 +18,12 @@ if(version_compare(PHP_VERSION,'5.3.0','<'))  die('require PHP > 5.3.0 !');
 define('APP_DEBUG',True);
 // 定义应用目录
 define('APP_PATH','./Application/');
-
+//路由常量(列表)
+define('PATH','Nana');
+//路由常量（文章）
+define('CONTENT','Cont');
+//pagenum
+define('PAGENUM',12);
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';
 

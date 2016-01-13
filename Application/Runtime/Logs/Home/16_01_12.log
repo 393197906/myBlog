@@ -1,0 +1,105 @@
+[ 2016-01-12T09:24:47+08:00 ] ::1 /myblog/index.php/Home/Service/article?id=16
+ERR: 无法加载控制器:Service
+
+[ 2016-01-12T11:37:21+08:00 ] ::1 /myblog/index.php/Home/Service/article?id=17
+ERR: 无法加载控制器:Service
+
+[ 2016-01-12T17:27:07+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:27:10+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:27:12+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:27:13+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:27:13+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:27:18+08:00 ] ::1 /myblog/code/1
+ERR: 非法操作:1
+
+[ 2016-01-12T17:30:36+08:00 ] ::1 /myblog/index.php/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:30:39+08:00 ] ::1 /myblog/index.php/Home/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-12T17:30:53+08:00 ] ::1 /myblog/index.php/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:30:57+08:00 ] ::1 /myblog/index.php/Home/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-12T17:32:36+08:00 ] ::1 /myblog/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:32:39+08:00 ] ::1 /myblog/Home/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-12T17:32:41+08:00 ] ::1 /myblog/Home/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:38:13+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:18+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:22+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:22+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:22+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:23+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:23+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:23+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:23+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:29+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:30+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:30+08:00 ] ::1 /myblog/Code/id
+ERR: 非法操作:id
+
+[ 2016-01-12T17:38:43+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:39:16+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:39:20+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:40:33+08:00 ] ::1 /myblog/Code/4
+ERR: 非法操作:4
+
+[ 2016-01-12T17:52:55+08:00 ] ::1 /myblog/Code/2
+ERR: 非法操作:2
+
+[ 2016-01-12T17:53:03+08:00 ] ::1 /myblog/Code/3
+ERR: 非法操作:3
+
+[ 2016-01-12T17:53:16+08:00 ] ::1 /myblog/Code/code
+ERR: 非法操作:code
+
+[ 2016-01-12T17:53:20+08:00 ] ::1 /myblog/Code/code/
+ERR: 非法操作:code
+
