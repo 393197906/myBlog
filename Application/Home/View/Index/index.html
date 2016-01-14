@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta property="wb:webmaster" content="5d5adf033883cbcc" />
-    <title>DaWenXi</title>
     <include file="Blocks/import" />
 </head>
 <body>
     <include file="Blocks/nav" />
     <div class="container">
-        <div class="row">
-            <div class="col-md-3 pull">
+        <div class="row gaga">
+            <div class="col-md-3 pull left">
                 <div class="thumbnail">
                     <div class="bg-logo" style="background-image: url(__PUBLIC__/images/600.jpg);"></div>
                     <div class="caption text-center">
@@ -22,7 +19,7 @@
                         </p>
                     </div>
                 </div>
-
+                
                 <div class="panel panel-default">
                     <div class="panel-body text-center">
                         <h4> <i class="fa fa-weibo fa-1x"></i>
@@ -37,9 +34,9 @@
                         <img src="__PUBLIC__/images/weixin.jpg" alt="二维码" class="panel-img"></div>
                 </div>
             </div>
-            <div class="col-md-6"  style="padding-left: 0;">
+            <div class="col-md-6  center">
                  <div class="panel panel-default">
-                    <div class="panel-body" style="padding-top:0;">
+                    <div class="panel-body content" style="padding-top:0;">
                         <volist id="vo" name="articleList">
                             <div class="row" style="padding-top:20px;">
                                 <div class="col-md-9">
@@ -74,10 +71,53 @@
                             </div>
 
                             <hr class="hr-bottom"></volist>
+                        <div class="row" id='wb' style="display:none;">
+                        <div class="col-md-12 text-center">
+                        <p class="load">已全部加载</p>
+                        </div>
+                        </div>
                     </div>
+                    <!-- 加载模块 -->
+                    <div class="row" id="loadIndex" style="display:block">
+                        <div class="col-md-12 text-center">
+                          <i class="fa fa-spinner fa-pulse fa-2x fa-fw margin-bottom"></i>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                                $(document).ready(function() {
+                                    $(window).scroll(function(){
+                                        if(window.scrollY>=$(document).height()-$(window).height()&&$('#wb').is(function(){
+                                            if( $(this).css('display') == 'none'){
+                                                return true;
+                                            }else{
+                                                return false;
+                                            }
+                                        })){ //到底
+                                             var firstRow  = $('.content').children().size()-1;
+                                             firstRow  = parseInt(firstRow/2); //计算起始主键
+                                             console.log(firstRow);
+                                             var load = $('#loadIndex');
+                                            $.post('__MODULE__/Index/pageList', {firstRow:firstRow}, function(data) {
+                                                if(data['status']==1){
+                                                         var obj = $('.content').children().last().prev(); //追加对象
+                                                         obj.after(data['info']);
+                                                }else{
+                                                    if(data['info']=='complate'){
+                                                        load.css({'display':'none'}); //加载隐藏
+                                                        $('#wb').css({'display':'block'})
+                                                    }else{
+                                                        warning(data['info'],'error'); 
+                                                    }
+                                                }
+                                            }); 
+                                        }
+                                    })
+
+                                });
+                            </script>
                 </div>
             </div>
-            <div class="col-md-3 pull"  style="padding-left: 0;">
+            <div class="col-md-3 pull right">
                 <div class="panel panel-default">
                     <div class="panel-heading pannel-title">
                         <i class="fa fa-code"></i>
@@ -119,6 +159,7 @@
         <hr>
 
         <include file="Blocks/footer" />
+         <include file="Blocks/top" />
     </div>
 </body>
 </html>

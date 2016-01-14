@@ -1,3 +1,9 @@
+body{
+	font-family: "微软雅黑";
+}
+.container{
+	position:relative;
+}
 h3{
 	margin-top: 0px;
 }
@@ -69,9 +75,7 @@ hr{
 .bottom-margin{
 	margin-left: 15px;
 }
-body{
-	font-family: "微软雅黑";
-}
+
 
 a{
 	color:#000;
@@ -83,9 +87,6 @@ a{
 a:hover{
         color:#d9534f;  /*主色调粉红*/
     }
-
-
-
 blockquote{
 	font-size:1.50rem ;
 }

@@ -3,59 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <link rel="stylesheet" href="/myblog/Public/css/bootstrap.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="/myblog/Public/css/bootstrap.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/font-awesome.min.css">
 <link rel="stylesheet" href="/myblog/Public/css/blog.css">
 <script src='/myblog/Public/js/jquery-2.1.4.min.js'></script>
 <script src='/myblog/Public/js/bootstrap.min.js'></script>
-<script src='/myblog/Public/js/stickUp.min.js'></script>
+<script src='/myblog/Public/js/jquery.pin.min.js'></script>
 <style type="text/css">
 	body{
 		background: url(/myblog/Public/images/bg.jpg);
+		background-attachment:fixed;
 	}
 </style>
 </head>
 <body>
     <nav class="navbar  navbar-default">
-            <div class="container" style="background-color:white;">
-               <div class="navbar-header" id="left">
-                    <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
-                    <a class="navbar-brand active" href="/myblog" style="padding-left: 2rem;">DaWenxi
+    <div class="container" style="background-color:white;">
+        <div class="navbar-header" id="left">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="/myblog/Public/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
+            <a class="navbar-brand " href="/myblog" style="padding-left:2rem">DaWenxi</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="right">
+                <li>
+                    <a href="<?php echo U(PATH.'/1');?>">
+                        编码
+                        <span class="sr-only"></span>
                     </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
-                   <img src="/myblog/Public/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
-                    <ul class="nav navbar-nav navbar-right" id="right">
-                        <li><a href="<?php echo U(PATH.'/1');?>">编码<span class="sr-only"></span></a></li>
-                        <li><a href="<?php echo U(PATH.'/2');?>">娱乐</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="<?php echo U(PATH.'/3');?>">魔兽世界</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="<?php echo U(PATH.'/4');?>">暗黑3</a></li>
-                            </ul>
+                </li>
+                <li>
+                    <a href="<?php echo U(PATH.'/2');?>">娱乐</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        暴雪
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="<?php echo U(PATH.'/3');?>">魔兽世界</a>
                         </li>
-                        <form class="navbar-form navbar-left" role="search" action="<?php echo U(PATH.'/search');?>" method='get'>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_GET['search']); ?>>
-                        </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
-                    </form>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="<?php echo U(PATH.'/4');?>">暗黑3</a>
+                        </li>
                     </ul>
-                    
-                   <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
-                        <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索">
-                        </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
-                    </form>
-                    </ul> -->
-                    </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
+                </li>
+                <form class="navbar-form navbar-left" role="search" action="<?php echo U(PATH.'/search');?>" method='get'>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索" name="search" value=<?php echo ($_GET['search']); ?>></div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </ul>
+
+            <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索"></div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </ul>
+        -->
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
 <script type="text/javascript">
     // var width = window.screen.availWidth;
     // 右-左
@@ -72,7 +95,7 @@
         bu=bu+15; 
         $('.zou').css({"right":bu+'px'}); 
     }
-    , 200)*/
+    , 200)
     // 左-右
     var left = parseInt($("#left").css("width"));
     var right = parseInt($("#right").css("width"));
@@ -87,7 +110,7 @@
         bu=bu+15; 
         $('.zou').css({"left":bu+'px'}); 
     }
-    , 200)
+    , 200)*/
 </script>
     <div class="container">
         <div class="row">
@@ -166,12 +189,18 @@
         <div class="row">
                 <div class="col-md-12" style="padding:0;">
                     <footer>
-                        <div class="row">
+                        <!-- <div class="row"> 
                             <div class="col-md-6 text-left">
                                 <p>© Design 2016</p>
                             </div>
                             <div class="col-md-6 text-right">
                                 <p>Author:  达文西</p>
+                            </div>
+                        </div>-->
+                        <div class="row"> 
+                            <div class="col-md-12">
+                                <p style="padding-top: 10px;"><span class="pull-left">© Design 2016</span>
+                                <span class="pull-right">Author:  达文西</span></p>
                             </div>
                         </div>
                     </footer>

@@ -1,42 +1,61 @@
 <nav class="navbar  navbar-default">
-            <div class="container" style="background-color:white;">
-               <div class="navbar-header" id="left">
-                    <img src="__PUBLIC__/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
-                    <a class="navbar-brand active" href="__APP__" style="padding-left: 2rem;">DaWenxi
+    <div class="container" style="background-color:white;">
+        <div class="navbar-header" id="left">
+             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> 
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <img src="__PUBLIC__/images/shanzhijing.png"  class="img-circle" alt="Responsive image" style="max-height:50px;float:left">
+            <a class="navbar-brand " href="__APP__" style="padding-left:2rem">DaWenxi</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right" id="right">
+                <li>
+                    <a href="{:U(PATH.'/1')}">
+                        编码
+                        <span class="sr-only"></span>
                     </a>
-                </div>
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="position: relative;">
-                   <img src="__PUBLIC__/images/shanzhiright.gif"  class="img-circle zou" alt="Responsive image" style="max-height:50px;">
-                    <ul class="nav navbar-nav navbar-right" id="right">
-                        <li><a href="{:U(PATH.'/1')}">编码<span class="sr-only"></span></a></li>
-                        <li><a href="{:U(PATH.'/2')}">娱乐</a></li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">暴雪<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="{:U(PATH.'/3')}">魔兽世界</a></li>
-                                <li role="separator" class="divider"></li>
-                                <li><a href="{:U(PATH.'/4')}">暗黑3</a></li>
-                            </ul>
+                </li>
+                <li>
+                    <a href="{:U(PATH.'/2')}">娱乐</a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        暴雪
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{:U(PATH.'/3')}">魔兽世界</a>
                         </li>
-                        <form class="navbar-form navbar-left" role="search" action="{:U(PATH.'/search')}" method='get'>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索" name="search" value={$Think.get.search}>
-                        </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
-                    </form>
+                        <li role="separator" class="divider"></li>
+                        <li>
+                            <a href="{:U(PATH.'/4')}">暗黑3</a>
+                        </li>
                     </ul>
-                    
-                   <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
-                        <form class="navbar-form navbar-left" role="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="搜索">
-                        </div>
-                        <button type="submit" class="btn btn-default">搜索</button>
-                    </form>
-                    </ul> -->
-                    </div><!-- /.navbar-collapse -->
-                    </div><!-- /.container-fluid -->
-                </nav>
+                </li>
+                <form class="navbar-form navbar-left" role="search" action="{:U(PATH.'/search')}" method='get'>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索" name="search" value={$Think.get.search}></div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </ul>
+
+            <!-- <ul class="nav navbar-nav navbar-right" style="margin-right: -30px;">
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="搜索"></div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </ul>
+        -->
+    </div>
+    <!-- /.navbar-collapse -->
+</div>
+<!-- /.container-fluid -->
+</nav>
 <script type="text/javascript">
     // var width = window.screen.availWidth;
     // 右-左
@@ -53,7 +72,7 @@
         bu=bu+15; 
         $('.zou').css({"right":bu+'px'}); 
     }
-    , 200)*/
+    , 200)
     // 左-右
     var left = parseInt($("#left").css("width"));
     var right = parseInt($("#right").css("width"));
@@ -68,5 +87,5 @@
         bu=bu+15; 
         $('.zou').css({"left":bu+'px'}); 
     }
-    , 200)
+    , 200)*/
 </script>

@@ -3,6 +3,7 @@ namespace Home\Controller;
 use Think\Controller;
 class CodeController extends Controller
 {   
+
     public function index() {
         $id = I('get.id');
         $article = D('article');
@@ -37,6 +38,8 @@ class CodeController extends Controller
         $this->assign('page',$page->show());
         $this->display();
     }
+
+  
     //文章页
     public function detail(){
     	 $id = I('get.id');
